@@ -23,19 +23,22 @@ You can also delete an existing alarm.
 
 Learning and Contributing in the Moralis Partner Eco-systems:
 
-Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
+1. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
 Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file)
 
 
-NFT.Storage for Filecoin:
+2. NFT.Storage for Filecoin:
 We are using NFT.Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file). We are storing Alarm metadata using NFT.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using NFT.Storage. We are also storing the hash returned from IPFS to Ethereum test network using  NFT.Storage.
  Further we are using NFT.Storage for: Video analytics configuration using NFT.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and NFT.Storage for snapshots.
  
  Github link: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
  
- XMTP: Please visit
+ 3. Tableland: Please visit Incident Notes at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
+ 
+ 4. XMTP: Please visit
  1. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
  2. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
+
 
 
