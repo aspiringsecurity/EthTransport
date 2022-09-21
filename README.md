@@ -27,10 +27,6 @@ Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our 
 
 Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file)
 
-We are also using it for decentralized social sharing and road counselling at  incident spot (please visit  Zoraroadcounselingatincidents.mov)
-
-Demo of alarm viewer and event marketplace at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza  (please visit zoraroadincidentsalarmcomponentsandmarketplace.mov)
-
 
 NFT.Storage for Filecoin:
 We are using NFT.Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file). We are storing Alarm metadata using NFT.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using NFT.Storage. We are also storing the hash returned from IPFS to Ethereum test network using  NFT.Storage.
