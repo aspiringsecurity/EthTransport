@@ -33,5 +33,9 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
  Further we are using NFT.Storage for: Video analytics configuration using NFT.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and NFT.Storage for snapshots.
  
  Github link: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
+ 
+ XMTP: Please visit
+ 1. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
+ 2. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
 
 
