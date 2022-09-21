@@ -1,0 +1,101 @@
+name: API
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/api/**'
+      - '.github/workflows/api.yml'
+      - 'yarn.lock'
+  pull_request:
+    paths:
+      - 'packages/api/**'
+      - '.github/workflows/api.yml'
+      - 'yarn.lock'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18.4.0'
+      - uses: bahmutov/npm-install@v1
+      - run: cp .env.tpl .env
+      - run: yarn test:api
+        env:
+          DATABASE_URL: http://localhost:3000
+          DATABASE_TOKEN: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTYwMzk2ODgzNCwiZXhwIjoyNTUwNjUzNjM0LCJyb2xlIjoic2VydmljZV9yb2xlIn0.necIJaiP7X2T2QjGeV-FhpkizcNTX8HjDDBAxpgQTEI
+          DATABASE_CONNECTION: postgresql://postgres:postgres@localhost:5432/postgres
+  deploy-dev:
+    name: Deploy Dev
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18.4.0'
+      - uses: bahmutov/npm-install@v1
+      - name: Publish app
+        if: env.CF_API_TOKEN
+        uses: cloudflare/wrangler-action@2.0.0
+        env:
+          SENTRY_TOKEN: ${{secrets.SENTRY_TOKEN}}
+          CF_API_TOKEN: ${{secrets.CF_API_TOKEN}}
+        with:
+          apiToken: ${{secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/api'
+  deploy-staging:
+    name: Deploy Staging
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18.4.0'
+      - uses: bahmutov/npm-install@v1
+      - name: Publish app
+        uses: cloudflare/wrangler-action@2.0.0
+        env:
+          SENTRY_TOKEN: ${{secrets.SENTRY_TOKEN}}
+        with:
+          apiToken: ${{secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/api'
+          environment: 'staging'
+  release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    name: Release
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: tag-release
+        with:
+          path: packages/api
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          monorepo-tags: true
+          package-name: api
+      - uses: actions/checkout@v2
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - uses: actions/setup-node@v2
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        with:
+          node-version: '18.4.0'
+          registry-url: https://registry.npmjs.org/
+      - uses: bahmutov/npm-install@v1
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - uses: cloudflare/wrangler-action@2.0.0
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        env:
+          SENTRY_TOKEN: ${{ secrets.SENTRY_TOKEN }}
+          SENTRY_UPLOAD: ${{ secrets.SENTRY_UPLOAD }}
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/api'
+          environment: 'production'

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<pre id="out"></pre>
+<script type="module">
+  import { NFTStorage } from 'https://cdn.jsdelivr.net/npm/nft.storage/dist/bundle.esm.min.js'
+
+  const token =
+    new URLSearchParams(window.location.search).get('key') || 'API_KEY' // your API key from https://nft.storage/manage
+
+  function log(msg) {
+    msg = JSON.stringify(msg, null, 2)
+    document.getElementById('out').innerHTML += `${msg}\n`
+  }
+
+  async function main() {
+    const store = new NFTStorage({ token })
+    const data = 'Hello nft.storage!'
+    const cid = await store.storeBlob(new Blob([data]))
+    log({ data, cid })
+    const status = await store.status(cid)
+    log(status)
+  }
+  main()
+</script>

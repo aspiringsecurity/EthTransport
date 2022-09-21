@@ -1,0 +1,45 @@
+name: Cron Check Failed Pins
+
+on:
+  schedule:
+    - cron: '8 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      after:
+        description: 'Consider pins created after this ISO formatted date:'
+        required: false
+        default: ''
+
+jobs:
+  update:
+    name: Check Failed Pins
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        env: ['production']
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Checkout latest cron release tag
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0 --match='cron-*')
+          git checkout $LATEST_TAG
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - uses: bahmutov/npm-install@v1
+      - name: Run job
+        env:
+          DEBUG: '*'
+          ENV: ${{ matrix.env }}
+          STAGING_DATABASE_CONNECTION: ${{ secrets.STAGING_DATABASE_CONNECTION }}
+          PROD_DATABASE_CONNECTION: ${{ secrets.PROD_DATABASE_CONNECTION }}
+          CLUSTER1_API_URL: ${{ secrets.CLUSTER1_API_URL }}
+          CLUSTER1_BASIC_AUTH_TOKEN: ${{ secrets.CLUSTER1_BASIC_AUTH_TOKEN }}
+          CLUSTER2_API_URL: ${{ secrets.CLUSTER2_API_URL }}
+          CLUSTER2_BASIC_AUTH_TOKEN: ${{ secrets.CLUSTER2_BASIC_AUTH_TOKEN }}
+          CLUSTER3_API_URL: ${{ secrets.CLUSTER3_API_URL }}
+          CLUSTER3_BASIC_AUTH_TOKEN: ${{ secrets.CLUSTER3_BASIC_AUTH_TOKEN }}
+          AFTER: ${{ github.event.inputs.after }}
+        run: yarn --cwd packages/cron start:pins-failed

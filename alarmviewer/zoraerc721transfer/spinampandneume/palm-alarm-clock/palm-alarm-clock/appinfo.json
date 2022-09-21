@@ -1,0 +1,11 @@
+{
+	"id": "com.aspiring.alarmclock",
+	"version": "1.0.0",
+	"vendor": "AspiringInvestments",
+	"type": "web",
+	"main": "index.html",
+	"theme": "dark",
+	"title": "AlarmClock",
+	"icon": "icon.png",
+	"uiRevision": 2
+}

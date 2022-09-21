@@ -1,0 +1,21 @@
+1. Set Alarm
+   alarm enable off
+       verify alarm doesnt ring
+       verify display
+   alarm enable on
+       verify alarm rings
+       upon ringing alarm setting alarm enable to off should cancel it
+
+   time setting
+       set all kinds of times (am/pm)
+       verify alarm duration set correctly
+
+   days 
+       set all combination of days
+       verify alarm expires only on alarming days
+       skip days, verify alarm skips
+
+2. Set Wallpaper
+
+
+3. Set Ringtone

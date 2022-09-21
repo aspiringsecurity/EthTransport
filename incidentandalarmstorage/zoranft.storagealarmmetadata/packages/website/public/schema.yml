@@ -1,0 +1,782 @@
+openapi: 3.0.0
+info:
+  title: NFT Storage API
+  version: '1.0'
+
+servers:
+  - url: https://api.nft.storage
+  - url: http://127.0.0.1:8787
+
+tags:
+  - name: NFT Storage
+paths:
+  /store:
+    post:
+      tags:
+        - NFT Storage
+      summary: Store an ERC-1155 compatible NFT
+      description: |
+        Store an [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155)-compatible NFT as 
+        a collection of content-addressed objects connected by IPFS CID links.
+
+        The POST request accepts `multipart/form-data` content restricted to a body size of 100MB (see "Size limitations" below for more information). The request must contain a form field named `meta`.
+
+        The `meta` field must contain a JSON string that conforms to the [ERC-1155 metadata schema](https://eips.ethereum.org/EIPS/eip-1155#metadata).
+
+        Any field(s) inside the `meta` object can be substituted with an ipfs URL to a file(s), by providing a form data field with a name matching a (`.` delimited) property path and value containing the file content (in binary string or plain text depending on file format).
+
+        The name of the form data field containing the file content should be the "path" of the JSON field, using `.` to traverse nested
+        objects.
+
+        For example, with a `meta` object of the form:
+
+          ```json
+          {
+            "name": "Hello",
+            "image": undefined,
+            "properties": {
+              "videoClip": undefined
+            }
+          }
+          ```
+
+        You must include form fields named `image` and `properties.videoClip` in your request body, with the content of the image and video files as the form field values.
+
+        All form fields other than `meta` must contain binary file data, and the field name will be used as a '.' delimited property path for the `meta` object, as described above. If the form field name matches a `meta` property with a non-falsy value, the request will be rejected with an error.
+
+        ### Mime Type Recommendations
+
+        The ERC-1155 metadata standard specifies that the `image` metadata field should reference a file with a content type of `image/*`.
+        An earlier version of this API enforced this as a requirement, but this proved to be incompatible with some existing systems and the
+        requirement was relaxed, although you may see a warning when using the official JavaScript client.
+
+        We highly recommend that you only use content with an `image/*` content type for your `image` field, and include other content types in the
+        `properties` field as additional references.
+
+        ### Size limitations
+
+        The store endpoint is restricted to a total request body size of 100MB, which includes the metadata and all attached files. To store larger files, you
+        can use the /upload endpoint with chunked CAR files (see "/upload").
+
+        ### Rate limits
+
+        This API imposes rate limits to ensure quality of service. You may receive a 429 "Too many requests" error if you make more than 30 requests with the same API token within a 10 second window. Upon receiving a response with a 429 status, clients should retry the failed request after a small delay. To avoid 429 responses, you may wish to implement client-side request throttling to stay within the limits (note: the JS client automatically does this).
+
+      operationId: store
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                meta:
+                  type: string
+              additionalProperties:
+                type: string
+                format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/UploadResponse'
+        '400':
+          $ref: '#/components/responses/badRequest'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+
+  /upload:
+    post:
+      tags:
+        - NFT Storage
+      summary: Store a file
+      description: |
+        Store a file with nft.storage.
+        You can upload either a single file or multiple files in a directory.
+        Each request to /upload is restricted to a body size of 100MB, though this does not mean you cannot upload larger files (see "Size limitations" below).
+
+        ### Single file
+        Send the POST request with `Blob`/`File` data as the request body.
+
+        ### Multiple files
+        Send the POST request as `FormData` with the header `Content-Type: multipart/form-data` set. Each part should have a `Content-Disposition` header to specify "name" (which must be "file") and "filename". e.g.
+
+        ```
+        ------WebKitFormBoundary5peilISl2YOOweQy
+        Content-Disposition: form-data; name="file"; filename="image.png"
+        Content-Type: image/png
+
+        <data>
+        ------WebKitFormBoundary5peilISl2YOOweQy--
+        ```
+
+        ### Content Addressed Archive (CAR) files
+        You can also upload a CAR file, by setting the request body as a single CAR Blob/File object and providing the request header `Content-Type: application/car`
+        Providing a CAR file allows you to pre-compute the root CID for 1 or more files, ensures that NFT.Storage will store and provide your assets with the same CID.
+
+        ### Size limitations
+        Each request to the upload endpoint is limited to a total request body size of 100MB.
+        However, you can upload files larger than 100MB by packing them into a CAR file and splitting the CAR
+        into chunks of less than 100MB. This strategy is used by the JavaScript client library to support uploads of large files.
+
+        The simplest method of splitting CAR files is with the [carbites cli tool](https://github.com/nftstorage/carbites):
+
+        ```
+        npm i -g carbites-cli
+
+        # Split a big CAR into many smaller CARs
+        carbites split big.car --size 100MB --strategy treewalk
+        ```
+
+        Note that you MUST use the `treewalk` strategy, so that all the chunked CARs have the same root CID.
+        Once all the CAR chunks have been uploaded, the CARs will be combined, made available via IPFS,
+        and queued for storage on Filecoin.
+
+        For more about working with CARs, see https://docs.web3.storage/how-tos/work-with-car-files
+
+        ### Rate limits
+
+        This API imposes rate limits to ensure quality of service. You may receive a 429 "Too many requests" error if you make more than 30 requests with the same API token within a ten second window. Upon receiving a response with a 429 status, clients should retry the failed request after a small delay. To avoid 429 responses, you may wish to implement client-side request throttling to stay within the limits (note: the JS client automatically does this).
+
+      operationId: upload
+      parameters:
+        - in: header
+          name: x-agent-did
+          description: DID that issued / signed UCAN authorization token (required if UCAN token is used)
+          schema:
+            type: string
+            format: DID
+            required: false
+      requestBody:
+        required: true
+        content:
+          image/*:
+            schema:
+              type: string
+              format: binary
+          application/car:
+            schema:
+              type: string
+              format: binary
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+          '*/*':
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/UploadResponse'
+        '400':
+          $ref: '#/components/responses/badRequest'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /ucan-upload:
+    post:
+      tags:
+        - NFT Storage
+      summary: Store a file
+      description: |
+        Just like `/upload` endpoint but [using UCAN authorization tokens](https://nft.storage/docs/how-to/ucan/#using-ucans-with-nftstorage).
+        You must set `x-agent-did` header to a DID that signed the token.
+
+      operationId: ucan-upload
+      requestBody:
+        required: true
+        content:
+          image/*:
+            schema:
+              type: string
+              format: binary
+          application/car:
+            schema:
+              type: string
+              format: binary
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+          '*/*':
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/UploadResponse'
+        '400':
+          $ref: '#/components/responses/badRequest'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /:
+    get:
+      tags:
+        - NFT Storage
+      summary: List all stored files
+      operationId: list
+      parameters:
+        - $ref: '#/components/parameters/before'
+        - $ref: '#/components/parameters/limit'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/ListResponse'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /{cid}:
+    get:
+      tags:
+        - NFT Storage
+      summary: Get information for the stored file CID
+      description: Includes the IPFS pinning state and the Filecoin deal state.
+      operationId: status
+      parameters:
+        - name: cid
+          in: path
+          description: CID for the NFT
+          required: true
+          schema:
+            $ref: '#/components/schemas/CID'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/GetResponse'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+    delete:
+      tags:
+        - NFT Storage
+      summary: Stop storing the content with the passed CID
+      description: |
+        Stop storing the content with the passed CID on nft.storage.
+        - Unpin the item from the underlying IPFS pinning service.
+        - Cease renewals for expired Filecoin deals involving the CID.  
+
+        ⚠️ This does not remove the content from the network.
+
+        - Does not terminate any established Filecoin deal.
+        - Does not remove the content from other IPFS nodes in the network that already cached or pinned the CID.  
+
+        Note: the content will remain available if another user has stored the CID with nft.storage.
+      operationId: delete
+      parameters:
+        - name: cid
+          in: path
+          description: CID for the NFT
+          required: true
+          schema:
+            $ref: '#/components/schemas/CID'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/DeleteResponse'
+        '401':
+          $ref: '#/components/responses/unauthorized'
+        '403':
+          $ref: '#/components/responses/forbidden'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /check/{cid}:
+    get:
+      tags:
+        - NFT Storage
+      summary: Check if a CID of an NFT is being stored by nft.storage.
+      description: Includes the IPFS pinning state and the Filecoin deal state.
+      operationId: check
+      security: []
+      parameters:
+        - name: cid
+          in: path
+          description: CID for the NFT
+          required: true
+          schema:
+            $ref: '#/components/schemas/CID'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/CheckResponse'
+        '404':
+          $ref: '#/components/responses/notFound'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /did:
+    get:
+      tags:
+        - NFT Storage
+      summary: Get nft.storage DID
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    default: true
+                  value:
+                    type: string
+                    example: did:key:z6MkgBRFJi7Ew2mzN7JtYN7nkq8M8qTHhLbsTEvV5j4ajWZS
+                    description: NFT Storage DID.
+  /user/did:
+    post:
+      tags:
+        - NFT Storage
+      summary: Register a DID for a user.
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              type: object
+              properties:
+                did:
+                  type: string
+                  example: did:key:z6MkgBRFJi7Ew2mzN7JtYN7nkq8M8qTHhLbsTEvV5j4ajWZS
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    default: true
+                  value:
+                    type: string
+                    example: did:key:z6MkgBRFJi7Ew2mzN7JtYN7nkq8M8qTHhLbsTEvV5j4ajWZS
+                    description: NFT Storage DID.
+        '400':
+          $ref: '#/components/responses/badRequest'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+  /ucan/token:
+    post:
+      tags:
+        - NFT Storage
+      summary: Get a root UCAN.
+      description: |
+        This endpoint returns a root UCAN for nft.storage.
+        The UCAN will be valid for **two weeks** and has full capabilities. The JWT payload will looking similar to this:
+          
+        ```json
+        {
+          "att": [
+            {
+              "with": "storage://did:key:z6MkheUPoHhYRS5LoHbbttpaTkkxvFFFUV5VPSziwTJmbb7D",
+              "can": "upload/*"
+            }
+          ],
+          "exp": 1646668606,
+          "iss": "did:key:z6MkheUPoHhYRS5LoHbbttpaTkkxvFFFUV5VPSziwTJmbb7D",
+          "prf": []
+        }
+        ```
+
+        A valid UCAN can be used for authorization in this endpoint.
+
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                type: object
+                properties:
+                  ok:
+                    type: boolean
+                    default: true
+                  value:
+                    type: string
+                    example: eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCIsInVjdiI6IjAuOC4wIn0.eyJhdHQiOlt7IndpdGgiOiJzdG9yYWdlOi8vZGlkOmtleTp6Nk1raGVVUG9IaFlSUzVMb0hiYnR0cGFUa2t4dkZGRlVWNVZQU3ppd1RKbWJiN0QiLCJjYW4iOiJ1cGxvYWQvKiJ9XSwiZXhwIjoxNjQ2NjY4NjA2LCJpc3MiOiJkaWQ6a2V5Ono2TWtoZVVQb0hoWVJTNUxvSGJidHRwYVRra3h2RkZGVVY1VlBTeml3VEptYmI3RCIsInByZiI6W251bGxdfQ.JSJ01PY3d6a-vkN6clTvVi2AeZQorvRpyBYwYYMNEtZp6TXW0AhsUCP1ltL7hJjr0iWAp-B6dpOHsJS6tR1jCg
+                    description: Root UCAN.
+        '400':
+          $ref: '#/components/responses/didNotFoundError'
+        '500':
+          $ref: '#/components/responses/internalServerError'
+components:
+  schemas:
+    NFT:
+      type: object
+      properties:
+        cid:
+          $ref: '#/components/schemas/CID'
+        size:
+          description: Size in bytes of the NFT data.
+          type: number
+          default: 132614
+        created:
+          $ref: '#/components/schemas/Date'
+        type:
+          type: string
+          example: image/jpeg
+          description: MIME type of the uploaded file or 'directory' when uploading multiple files.
+        scope:
+          description: Name of the JWT token used to create this NFT.
+          type: string
+          default: default
+        pin:
+          $ref: '#/components/schemas/Pin'
+        files:
+          $ref: '#/components/schemas/Files'
+        deals:
+          type: array
+          items:
+            $ref: '#/components/schemas/Deal'
+    Links:
+      type: object
+      properties:
+        ipfs:
+          type: string
+          example: ipfs://bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u
+        http:
+          type: string
+          example: http://bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u.ipfs.dweb.link
+        file:
+          type: array
+          items:
+            type: object
+            properties:
+              ipfs:
+                type: string
+                example: ipfs://bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u/image.jpg
+              http:
+                type: string
+                example: http://bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u.ipfs.dweb.link/image.jpg
+    Files:
+      description: Files in the directory (only if this NFT is a directory).
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+            example: logo.jpg
+          type:
+            type: string
+            example: image/jpeg
+    Deal:
+      type: object
+      properties:
+        batchRootCid:
+          type: string
+          example: bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u
+        lastChange:
+          type: string
+          example: '2021-03-18T11:46:50.000Z'
+          description: 'This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: YYYY-MM-DDTHH:MM:SSZ.'
+        miner:
+          description: Miner ID
+          type: string
+          example: f05678
+        network:
+          description: Filecoin network for this Deal
+          type: string
+          enum:
+            - nerpanet
+            - mainnet
+        pieceCid:
+          description: Piece CID string
+          type: string
+          example: bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u
+        status:
+          description: Deal status
+          type: string
+          enum:
+            - queued
+            - proposing
+            - accepted
+            - failed
+            - active
+            - published
+            - terminated
+        statusText:
+          type: string
+          example: miner rejected my data
+          description: Deal status description.
+        chainDealID:
+          type: number
+          example: 138
+          description: Identifier for the deal stored on chain.
+        dealActivation:
+          type: string
+          example: '2021-03-18T11:46:50.000Z'
+          description: 'This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: YYYY-MM-DDTHH:MM:SSZ.'
+        dealExpiration:
+          type: string
+          example: '2021-03-18T11:46:50.000Z'
+          description: 'This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: YYYY-MM-DDTHH:MM:SSZ.'
+      required:
+        - status
+        - lastChange
+    Date:
+      type: string
+      format: date-time
+      example: '2021-03-12T17:03:07.787Z'
+      description: 'This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: YYYY-MM-DDTHH:MM:SSZ.'
+    CID:
+      type: string
+      example: bafkreidivzimqfqtoqxkrpge6bjyhlvxqs3rhe73owtmdulaxr5do5in7u
+      description: Self-describing content-addressed identifiers for distributed systems. Check [spec](https://github.com/multiformats/cid) for more info.
+    PinStatus:
+      type: string
+      enum:
+        - queued
+        - pinning
+        - pinned
+        - failed
+    Pin:
+      type: object
+      properties:
+        cid:
+          $ref: '#/components/schemas/CID'
+        name:
+          type: string
+          example: pin name
+        meta:
+          type: object
+        status:
+          $ref: '#/components/schemas/PinStatus'
+        created:
+          $ref: '#/components/schemas/Date'
+        size:
+          type: number
+          example: 132614
+    UploadResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: true
+        value:
+          $ref: '#/components/schemas/NFT'
+    ListResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: true
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/NFT'
+    GetResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: true
+        value:
+          type: object
+          $ref: '#/components/schemas/NFT'
+    CheckResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: true
+        value:
+          type: object
+          properties:
+            cid:
+              $ref: '#/components/schemas/CID'
+            pin:
+              $ref: '#/components/schemas/Pin'
+            deals:
+              type: array
+              items:
+                $ref: '#/components/schemas/Deal'
+    DeleteResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+    ErrorResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: false
+        error:
+          type: object
+          properties:
+            name:
+              type: string
+            message:
+              type: string
+    UnauthorizedErrorResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: false
+        error:
+          type: object
+          properties:
+            name:
+              type: string
+              default: HTTP Error
+            message:
+              type: string
+              default: Unauthorized
+    ForbiddenErrorResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: false
+        error:
+          type: object
+          properties:
+            name:
+              type: string
+              default: HTTP Error
+            message:
+              type: string
+              enum: [Token is not valid, Session expired]
+    DidNotFoundErrorResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+          default: false
+        error:
+          type: object
+          properties:
+            name:
+              type: string
+              default: DIDNotFound
+            message:
+              type: string
+              default: User does not have a DID registered.
+  securitySchemes:
+    bearerAuth:
+      description: |
+        The NFT Storage API uses *Bearer Tokens* to authenticate requests. You can view and manage your tokens in the [NFT Storage Dashboard](https://nft.storage).   
+
+        Your tokens carry many privileges, so be sure to keep them secure! Do not share your *secret tokens* in publicly accessible areas such as GitHub, client-side code, and so forth.   
+
+        **Bearer authentication** (also called token authentication) is an HTTP authentication scheme that involves security tokens called bearer tokens. The name “Bearer authentication” can be understood as “give access to the bearer of this token.” The bearer token is a cryptic string, usually generated by the server in response to a login request. The client must send this token in the Authorization header when making requests to protected resources:
+
+        ```js
+        Authorization: Bearer <token>
+        ```
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  responses:
+    unauthorized:
+      description: Unauthorized
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/UnauthorizedErrorResponse'
+    forbidden:
+      description: Forbidden
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/ForbiddenErrorResponse'
+    notFound:
+      description: Not Found
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    internalServerError:
+      description: Internal Server Error
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    badRequest:
+      description: Bad Request
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    didNotFoundError:
+      description: Bad Request
+      content:
+        'application/json':
+          schema:
+            $ref: '#/components/schemas/DidNotFoundErrorResponse'
+  parameters:
+    before:
+      description: Return results created before provided timestamp
+      name: before
+      in: query
+      required: false
+      schema:
+        type: string
+        format: date-time # RFC 3339, section 5.6
+      example: '2020-07-27T17:32:28Z'
+    limit:
+      description: Max records to return
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
+        format: int32
+        minimum: 1
+        maximum: 1000
+        default: 10
+security:
+  - bearerAuth: []

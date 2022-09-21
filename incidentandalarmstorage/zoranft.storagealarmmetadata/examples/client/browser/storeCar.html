@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<pre id="out"></pre>
+<script type="module">
+  import { NFTStorage } from 'https://cdn.jsdelivr.net/npm/nft.storage/dist/bundle.esm.min.js'
+
+  const token =
+    new URLSearchParams(window.location.search).get('key') || 'API_KEY' // your API key from https://nft.storage/manage
+
+  function log(msg) {
+    msg = JSON.stringify(msg, null, 2)
+    document.getElementById('out').innerHTML += `${msg}\n`
+  }
+
+  async function main() {
+    const store = new NFTStorage({ token })
+    const data = new Blob(['Hello nft.storage!'])
+    const { car, cid: expectedCid } = await NFTStorage.encodeBlob(data)
+    console.log({ expectedCid: expectedCid.toString() })
+
+    // send the CAR to nft.storage, the returned CID will match the one we created above.
+    const cid = await store.storeCar(car)
+
+    // verify the service is storing the CID we expect
+    const cidsMatch = expectedCid.toString() === cid
+    log({ data, cid, expectedCid, cidsMatch })
+
+    // check that the CID is pinned
+    const status = await store.status(cid)
+    log(status)
+  }
+  main()
+</script>

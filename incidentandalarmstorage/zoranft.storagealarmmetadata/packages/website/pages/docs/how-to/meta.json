@@ -1,0 +1,11 @@
+{
+  "mint-erc-1155": "Store and mint NFTs using ERC-1155 metadata standards",
+  "mint-custom-metadata": "Store and mint NFTs using custom metadata",
+  "mint-solana": "Store and mint NFTs for Solana with Metaplex",
+  "retrieve": "Retrieve NFT data from IPFS",
+  "store-directory": "Store a directory of files",
+  "get-status": "Get upload status",
+  "ucan": "Use UCAN tokens for delegated authorization",
+  "pinning-service": "Pinning Services API",
+  "nftup": "Upload with NFTUp"
+}

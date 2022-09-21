@@ -1,0 +1,10 @@
+@startuml
+actor Caller
+participant ReserveAuctionFindersErc20
+
+Caller -> ReserveAuctionFindersErc20 : setAuctionReservePrice()
+
+ReserveAuctionFindersErc20 -> ReserveAuctionFindersErc20 : update reserve price
+ReserveAuctionFindersErc20 -> ReserveAuctionFindersErc20 : emit AuctionReservePriceUpdated()
+
+@enduml

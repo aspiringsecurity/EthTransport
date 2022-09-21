@@ -1,0 +1,46 @@
+@import './tailwind.css';
+@import './vars.css';
+@import './fonts.css';
+@import './decorators.css';
+@import './colors.css';
+@import './utils.css';
+@import './animations.css';
+@import './stats.css';
+@import './button.css';
+@import './blog.css';
+@import './markdown.css';
+@import './nft-storage.swagger-ui.css';
+@import './nextra-theme.css';
+@import './nextra-overrides.css';
+@import './nav.css';
+@import './table.css';
+@import './tabs.css';
+@import './modal.css';
+@import './footer.css';
+@import './tooltip.css';
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 52em) {
+  html {
+    scroll-padding-top: 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+}

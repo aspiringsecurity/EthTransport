@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "AUTHENTIC";
+  src: url("../public/fonts/cond90.ttf") format("ttf"),
+    url("../public/fonts/cond130.ttf") format("ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "AUTHENTIC", Arial, Helvetica, sans-serif;
+  background-color: #d1ccc0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

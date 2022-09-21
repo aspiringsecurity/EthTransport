@@ -1,0 +1,93 @@
+name: Client
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/client/**'
+      - '.github/workflows/client.yml'
+      - 'yarn.lock'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'packages/client/**'
+      - '.github/workflows/client.yml'
+      - 'yarn.lock'
+
+jobs:
+  check:
+    name: Typecheck client
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - uses: bahmutov/npm-install@v1
+      - name: Typecheck
+        uses: gozala/typescript-error-reporter-action@v1.0.8
+        with:
+          project: packages/client/tsconfig.json
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - uses: bahmutov/npm-install@v1
+      - name: Test (ES)
+        run: yarn --cwd packages/client test:es
+      - name: Test (Web)
+        run: yarn --cwd packages/client test:web
+      - name: Test (CJS)
+        run: yarn --cwd packages/client test:cjs
+      - name: Coverage
+        run: yarn --cwd packages/client coverage
+  release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    name: Release
+    runs-on: ubuntu-latest
+    needs:
+      - check
+      - test
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: tag-release
+        with:
+          path: packages/client
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          monorepo-tags: true
+          package-name: nft.storage
+      - uses: actions/checkout@v2
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - uses: actions/setup-node@v2
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        with:
+          node-version: '16'
+          registry-url: https://registry.npmjs.org/
+      - uses: bahmutov/npm-install@v1
+        if: ${{ steps.tag-release.outputs.releases_created }}
+      - name: NPM Publish
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+        run: |
+          cd packages/client
+          npm publish --access=public
+      - name: Generate documentation
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        run: yarn build:client:docs
+      - name: Publish documentation
+        if: ${{ steps.tag-release.outputs.releases_created }}
+        uses: JamesIves/github-pages-deploy-action@4.1.7
+        with:
+          git-config-name: documentation-generator
+          branch: gh-pages
+          folder: docs/client
+          target-folder: client
+          commit-message: 'chore: generate client docs ${{ steps.tag-release.outputs.tag_name }} #${{ steps.tag-release.outputs.pr }}'

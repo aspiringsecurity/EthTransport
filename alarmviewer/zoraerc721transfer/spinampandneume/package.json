@@ -1,0 +1,20 @@
+{
+  "name": "web3-music-subgraph",
+  "license": "MIT",
+  "scripts": {
+    "schemagen": "mkdir -p generated && cat ./schema/*.graphql > ./generated/schema.graphql",
+    "codegen": "yarn schemagen && graph codegen",
+    "build": "yarn codegen && graph build",
+    "deploy-studio": "yarn build && graph deploy --studio web3-music-minimal",
+    "deploy-hosted": "yarn build && graph deploy --product hosted-service $HOSTED_USER/$HOSTED_GRAPH",
+    "deploy": "yarn build && graph deploy --studio web3-music-minimal",
+    "create-local": "graph create web3-music-minimal --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy web3-music-minimal --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.28.0",
+    "@graphprotocol/graph-ts": "^0.26.0",
+    "keccak256": "^1.0.6",
+    "web3-utils": "^1.7.1"
+  }
+}

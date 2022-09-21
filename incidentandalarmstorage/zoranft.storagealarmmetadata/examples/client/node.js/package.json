@@ -1,0 +1,17 @@
+{
+  "name": "nft-storage-examples",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Examples of using nft.storage in Node.js",
+  "main": "snigle.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Shaw",
+  "license": "(Apache-2.0 AND MIT)",
+  "dependencies": {
+    "ipfs-car": "^0.6.1",
+    "nft.storage": "^5.1.3"
+  }
+}

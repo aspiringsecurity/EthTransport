@@ -1,0 +1,26 @@
+.social-icons {
+  display: grid;
+  align-items: center;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 30px);
+}
+.social-icons svg {
+  width: 1.5rem;
+  fill: #fff;
+}
+
+.pl-byline {
+  display: flex;
+  align-items: center;
+}
+
+.pl-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pl-logo svg {
+  width: 1rem;
+  margin: 0 0.4rem;
+  fill: #fff;
+}

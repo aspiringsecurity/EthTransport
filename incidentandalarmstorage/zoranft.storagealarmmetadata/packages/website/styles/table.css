@@ -1,0 +1,235 @@
+/* Mobile/defaults */
+
+/*escape hatch- this is the scroll-based fallback for any uncanny sizes*/
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/*Base Table*/
+.table-responsive table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+/*Row and Cell styles*/
+.table-responsive table tr td,
+.table-responsive table tr th {
+  display: block;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+.table-responsive table tr th {
+  display: none;
+  white-space: nowrap;
+}
+.table-responsive table tr th > span {
+  display: flex;
+  align-items: center;
+}
+.table-responsive table tr th > span > svg,
+.table-responsive table tr td span > svg {
+  padding: 2px 0 0 2px;
+}
+.table-responsive table tr {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.table-responsive table tbody tr {
+  border: 1px solid var(--nsblack);
+}
+
+/*Stacked layout top children need more top-space*/
+.table-responsive table tr td:first-child,
+.table-responsive table tr th:first-child {
+  padding: 0.5rem 1rem 0.25rem 1rem;
+}
+
+/*[data-label] will make a left-hand based on this prop in stacked mode*/
+.table-responsive table tr td[data-label] {
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.table-responsive table tr td[data-label]::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: 700;
+  margin-right: 2rem;
+  font-size: 17px;
+}
+
+/*Utilities for special cells*/
+/*Cell has long content and should wrap at small sizes.*/
+.table-responsive td.wrap-cell {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+/*Cell shinks to content (eg. a button in a cell)*/
+.table-responsive td.shrink-cell {
+  white-space: nowrap;
+}
+
+/*Content centers in stacked layout*/
+.table-responsive td.center-cell {
+  display: flex;
+  justify-content: center;
+}
+
+.table-responsive .queuing {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .table-responsive table tr td.nowrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .table-responsive table tr td.nowrap .truncate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .table-responsive table tr td.nowrap .truncate + .icon-button {
+    padding-right: 0;
+  }
+
+  .table-responsive table tr td.nowrap .popup.active::after {
+    height: 12px;
+    left: inherit;
+    right: 10px;
+    top: -4px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    margin-left: 0;
+    animation: none;
+    width: auto;
+    font-size: 0.9rem !important;
+    padding: 5px 15px;
+    transform: none;
+  }
+}
+
+/* 832px */
+@media screen and (min-width: 1024px) {
+  /*Additive styles at full size*/
+  .table-responsive table {
+    table-layout: auto;
+    border: 1px solid var(--nsblack);
+  }
+  .table-responsive table thead tr {
+    border-bottom: 1px solid var(--nsblack);
+  }
+
+  /*Re-tabilify the table at fullsize*/
+  .table-responsive table tr {
+    margin-bottom: 0;
+    display: table-row;
+  }
+  .table-responsive table tr td,
+  .table-responsive table tr th,
+  .table-responsive table tr td:first-child,
+  .table-responsive table tr th:first-child {
+    display: table-cell;
+    padding: 0.5rem;
+  }
+  .table-responsive table td,
+  .table-responsive table th {
+    border-right: 1px solid var(--nsblack);
+  }
+
+  /*Undo mobile-labels*/
+  .table-responsive table tr td[data-label] {
+    text-align: left;
+    border-bottom: none;
+  }
+  .table-responsive table tr td[data-label]::before {
+    content: '';
+    float: left;
+  }
+  .table-responsive table .truncate {
+    max-width: 510px;
+  }
+  .table-responsive td .truncate {
+    max-width: 240px;
+  }
+
+  /*Utilities at full-size*/
+  .table-responsive td.shrink-cell {
+    width: 1%;
+    display: table-cell;
+  }
+
+  .table-responsive .queuing {
+    justify-content: flex-start;
+  }
+}
+
+.actions-menu {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.actions-menu button,
+.actions-menu a {
+  display: block;
+  padding: 8px 12px;
+  min-width: 180px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  text-align: left;
+  margin: 0;
+  border: 0;
+  font-family: 'ChicagoFLF', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.actions-menu button:hover,
+.actions-menu a:hover {
+  background-color: var(--nsgray-50);
+  cursor: pointer;
+}
+
+.actions-menu button.caution:hover {
+  background-color: var(--nsred);
+  cursor: pointer;
+}
+
+.actions-menu button:not(:last-child),
+.actions-menu a:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+.actions-trigger {
+  border-radius: 0;
+  font-family: 'ChicagoFLF', sans-serif;
+  border: 1px solid #000;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #000;
+}
+
+.actions-trigger:focus,
+.actions-trigger--active {
+  background-color: #000;
+  color: #fff;
+}
+
+.hidden-deals-trigger {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  font-size: inherit;
+  padding: 0;
+}
+
+.hidden-deals {
+  max-width: 320px;
+}
