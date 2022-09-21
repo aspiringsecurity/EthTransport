@@ -1,17 +1,17 @@
-# tableland-todo
+# Incident Notes @ Tableland
 
 
-The initial goal of this project is to serve as a base level POC for Tableland.
+The initial goal of this project is to develop an incident notes platform for Radiologists using Tableland. Utilizing the tableland to do architecture for development.
 
 ![arch diagram](https://github.com/tablelandnetwork/example-apps/blob/main/tableland-todo/utils/todos-arch-diagram.png?raw=true)
 
 
 
-### This is a Nuxt Project
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-quickstart:
+
+
+Incident Notes quickstart:
 
 ```bash
 # install dependencies
