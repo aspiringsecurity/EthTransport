@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Page renders correctly 1`] = `
+<div
+  class="container mx-auto"
+>
+  <div
+    class="ml-4 mt-8 flex justify-between"
+  >
+    <div>
+      <div
+        class="items-center mr-10 mt-4 font-bold text-orbitron text-3xl"
+      >
+        
+        Tableland Todos
+      
+      </div>
+    </div>
+     
+    <div
+      class="mt-4 mr-4"
+    >
+      <div
+        class="flex"
+      >
+        <button
+          class="relative leading-tight font-button border transition-colors duration-150 focus:outline-none shadow-sm border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 active:border-gray-500 dark:active:border-gray-300 cursor-pointer  px-5 py-2 rounded-button float-right text-poppins"
+          type="button"
+        >
+          <!---->
+          <!---->
+          <span
+            class=""
+          >
+            <span>
+              
+            Connect to Tableland
+          
+            </span>
+             
+            <!---->
+          </span>
+          <!---->
+        </button>
+      </div>
+    </div>
+  </div>
+   
+  <hr
+    class="border-gray-200 dark:border-gray-800 my-8"
+  />
+   
+  <div
+    class="container mx-auto"
+  >
+    <!---->
+     
+    <div
+      class="justify-center flex"
+    >
+      <button
+        class="relative leading-tight font-button border transition-colors duration-150 focus:outline-none shadow-sm border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 active:border-gray-500 dark:active:border-gray-300 cursor-pointer  px-5 py-2 rounded-button text-poppins"
+        type="button"
+      >
+        <!---->
+        <!---->
+        <span
+          class=""
+        >
+          
+        Connect to Tableland
+      
+        </span>
+        <!---->
+      </button>
+    </div>
+  </div>
+   
+  <!---->
+   
+  <div
+    class="fixed z-40 w-full sm:w-96 left-0 top-0"
+  >
+    <transition-group-stub
+      class="inline-block w-full"
+      enteractiveclass="transition ease-out-mijin duration-200"
+      enterclass="transform -translate-y-3 opacity-0"
+      entertoclass="transform translate-y-0 opacity-100"
+      leaveactiveclass="transition ease-in-mijin duration-200 absolute w-full"
+      leaveclass="transform translate-y-0 opacity-100"
+      leavetoclass="transform -translate-y-1/4 opacity-0"
+      moveclass="ease-in-out-mijin duration-200"
+      tag="ul"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,1 @@
+require('./plugins/mijin.js');
