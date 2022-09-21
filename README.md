@@ -1,4 +1,4 @@
-# EtherMonitor
+# EthTransport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads using ASDI OpenAQ dataset.
 
 Goal: Effective design, engineering and delivery of Ethereum blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics and automation. 
