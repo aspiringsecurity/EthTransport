@@ -1,7 +1,7 @@
-### Fluence Character count (Grants Round 11 Hackathon - Fluence)
-##### Follow The Fluence Quickstart Guide (Beginner)
-###### Description
-Extend the Fluence Quickstart, https://github.com/fluencelabs/examples/tree/main/quickstart/3-browser-to-service, with a distributed character count service deployed to at least one Fluence peer. Display a message's character count at the end of the message, e.g., (char count: 123 chars). You should accurately count characters.
+
+We are using Fluence to develop a counter for road incidents reported by citizens and complains resolved by police authorities in a specific region which could be shared across citizens and government authorities. Our impact solution for citizens create a positive societal behavior and can be used for availing tax benefits, citizen rewards and ecommerce gift cards by Ministry of Road and Transportation.
+
+Extend the Fluence Quickstart, https://github.com/fluencelabs/examples/tree/main/quickstart/3-browser-to-service, with a distributed incident count service deployed to Fluence peer. Display a message's character count at the end of the message, e.g., (char count: 123 chars). We should accurately count incidents.
 
 ### Creating the WebAssembly module for char-count service
 
