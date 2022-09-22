@@ -36,7 +36,9 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
  
  3. Tableland: Please visit Incident Notes at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
  
- 4. XMTP: Please visit
+ 4. XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
+ 
+ Please also visit XMTP integrations with the platform:
  
  a. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
  
