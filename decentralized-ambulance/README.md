@@ -1,6 +1,6 @@
-# Tesla Consumer Contract
+# Decentralized First Aid and Ambulance platform at the Incident Site
 
-Demonstrating how to connect a Smart Contract to a Tesla Vehicle
+We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
 ## Requirements
 
