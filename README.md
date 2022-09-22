@@ -34,7 +34,7 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
  
  Github link: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
  
- 3. Tableland: Please visit Incident Notes at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
+ 3. Tableland: We are using Tableland for implementing incident notes maintained by transport administrators. Please visit Incident Notes powered by Tableland at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
  
  4. XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
  
@@ -45,4 +45,9 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
  b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
 
 
+5. Fluence: We are using Fluence to develop a counter for road incidents reported by citizens and complains resolved by police authorities in a specific region which could be shared across citizens and government authorities. Our impact solution for citizens create a positive societal behavior and can be used for availing tax benefits, citizen rewards and ecommerce gift cards by Ministry of Road and Transportation.
+
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-fluence/fluence-incident-count
+
+6. Chainlink: 
 
