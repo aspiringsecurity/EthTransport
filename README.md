@@ -49,5 +49,5 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-fluence/fluence-incident-count
 
-6. Chainlink: 
+6. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
