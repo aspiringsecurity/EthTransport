@@ -20,6 +20,7 @@ Open the Alarm Settings menu from the home page.
 Add an alarm, set the wallpaper or choose an alarm tone.
 You can also delete an existing alarm.
 
+Moralis: We are using the Medium Clone example to develop a dashboard and newsletter structure for recording the weekly minutes of the meeting. Please visit the module link: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports
 
 Learning and Contributing in the Moralis Partner Eco-systems:
 
