@@ -22,6 +22,8 @@ You can also delete an existing alarm.
 
 Moralis: We are using the Medium Clone example to develop a dashboard and newsletter structure for recording the weekly minutes of the meeting. Please visit the module link: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports
 
+Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server
+
 Learning and Contributing in the Moralis Partner Eco-systems:
 
 1. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
