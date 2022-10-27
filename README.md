@@ -7,6 +7,14 @@ Solution: Technical solution for citizens, police officers and drivers to report
 
 Landing Website: https://sites.google.com/view/aspiring-road-safety/home
 
+Update: Harmony Marketplace Smart Contracts: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/harmony-nft-marketplace
+
+Smart contracts and implementation for Harmony Marketplace.
+
+Harmony Vizualizing and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
+
+We are developing an open source vizualization tool to enable tabulation, charting, organization and graphing of data.
+
 Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using Livepeer open source video streaming system. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
 
 How it works:
