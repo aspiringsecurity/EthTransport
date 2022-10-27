@@ -26,7 +26,7 @@ Update: Harmony Marketplace Smart Contracts: https://github.com/aspiringsecurity
 
 Smart contracts and implementation for Harmony Marketplace.
 
-Harmony Vizualizing and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
+Vizualization and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
 
 We are developing an open source vizualization tool to enable tabulation, charting, organization and graphing of data.
 
