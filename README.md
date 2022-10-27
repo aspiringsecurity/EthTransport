@@ -22,13 +22,13 @@ You can also delete an existing alarm.
 
 ----
 
+Vizualization and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
+
+We are developing an open source vizualization tool to enable tabulation, graphing, organization of data.
+
 Update: Harmony Marketplace Smart Contracts: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/harmony-nft-marketplace
 
 Smart contracts and implementation for Harmony Marketplace.
-
-Vizualization and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
-
-We are developing an open source vizualization tool to enable tabulation, charting, organization and graphing of data.
 
 -----
 
