@@ -36,7 +36,7 @@ Moralis: We are using the Medium Clone example to develop a dashboard and newsle
 
 Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed to moralis)
 
-Learning and Contributing in the Moralis Partner Eco-systems:
+Learning and Contributing in the Blockchain Eco-systems:
 
 1. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
