@@ -1,6 +1,6 @@
 
 # Web3 Car Parts Dashboard 
-Web3 Car Parts Dashboard is a Defi and DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
+Web3 Car Parts Dashboard is a Defi and DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc.
 
 # Getting Started with Web3 Car Parts Dashboard
 ### Web Requirements
