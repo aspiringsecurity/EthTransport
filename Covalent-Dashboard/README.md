@@ -1,5 +1,5 @@
 
-We are developing a Defi and DAO platform that enables users to keep track of all the details of their DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system.
+We are developing a Transport Defi and DAO platform that enables fleet providers, cab aggregators and corporate organizations to keep track of all the details of their Transport assets, vehicle assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate it with an analytics, tabulation and collaboration tool namely EtherCalc. 
 
 # Getting Started with Web3 Transport Dashboard
 
