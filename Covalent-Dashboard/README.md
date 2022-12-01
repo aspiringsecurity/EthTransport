@@ -1,8 +1,9 @@
 
 We are developing a Defi and DAO platform that enables users to keep track of all the details of their DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system.
 
-# Getting Started with Web3Dashboard
-### Web Requirements
+# Getting Started with Web3 Transport Dashboard
+
+## Web Requirements
 
 ## To check your assets you will need the following
 Wallet Address.<br>
