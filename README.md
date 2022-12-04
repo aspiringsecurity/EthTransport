@@ -69,10 +69,10 @@ Parametric Insurance Solution in public transportation especially for project fi
 
 7. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
 
-1. Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
+Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
 
-2. Get Log Events by Incident Types: to get log data for specific incident event along with its metadata
+Get Log Events by Incident Types: to get log data for specific incident event along with its metadata
 
-3. Get NFT External Metadata: To get metadata for NFT like attribute and snapshot images.
+Get NFT External Metadata: To get metadata for NFT like attribute and snapshot images.
 
-4. Get Historical Token Prices: To get price of token for currency that accept NFT/item on marketplace.
+Get Historical Token Prices: To get price of token for currency that accept NFT/item on marketplace.
