@@ -25,15 +25,6 @@ How it works:
 
 ----
 
-Vizualization and Analytics Tool: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/viz-anaytics-tool
-
-We are developing an open source vizualization tool to enable tabulation, graphing, organization of data.
-
-Update: Harmony Marketplace Smart Contracts: https://github.com/aspiringsecurity/EthTransport/tree/main/harmony-blockchain/harmony-nft-marketplace
-
-Smart contracts and implementation for Harmony Marketplace.
-
------
 
 Moralis: We are using the Medium Clone example to develop a dashboard and newsletter structure for recording the weekly minutes of the meeting. Please visit the module link: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports
 
