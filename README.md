@@ -7,7 +7,7 @@ Solution: Technical solution for citizens, police officers and drivers to report
 
 Landing Website: https://sites.google.com/view/aspiring-road-safety/home
 
-Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using Livepeer open source video streaming system. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
+Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, evmos and ZKP, Scrypt tools for a decentralized system. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
 
 How it works:
 
@@ -65,3 +65,14 @@ We are utilizing Chainlink VRF as follows:
 E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
 
 Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
+
+7. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
+
+1. Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
+
+2. Get Log Events by Incident Types: to get log data for specific incident event along with its metadata
+
+3. Get NFT External Metadata: To get metadata for NFT like attribute and snapshot images.
+
+4. Get Historical Token Prices: To get price of token for currency that accept NFT/item on marketplace.
