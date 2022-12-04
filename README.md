@@ -76,3 +76,8 @@ Get Log Events by Incident Types: to get log data for specific incident event al
 Get NFT External Metadata: To get metadata for NFT like attribute and snapshot images.
 
 Get Historical Token Prices: To get price of token for currency that accept NFT/item on marketplace.
+
+
+We are developing a Transport DAO platform using Covalent that enables fleet providers, cab aggregators and corporate organizations to keep track of all the details of their Transport assets, vehicle assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate it with an analytics, tabulation and collaboration tool namely EtherCalc. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Covalent-Dashboard
+
+Web3 Car Parts Dashboard powered by Covalent is a DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Car-Parts-Dashboard
