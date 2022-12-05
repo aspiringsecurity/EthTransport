@@ -84,8 +84,12 @@ Web3 Car Parts Dashboard powered by Covalent is a DAO platform that enables Tran
 
 8. Evmos : Evmos and Covalent End Point APIs:
 
-a. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet
+a. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
+
+ZK Transport wallet supports operations like the signing of the transaction and other cryptographic operations across multiple platforms and blockchains that improve the overall usability and interoperability. We used Zokrates for building the ZK Transport Wallet.
 
 b. Evmos Smart Contracts: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/evmos-smart-contract
 
 c. Governor Bravo Model Implementation and integration: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/governance 
+
+
