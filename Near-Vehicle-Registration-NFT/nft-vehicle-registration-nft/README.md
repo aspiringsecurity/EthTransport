@@ -1,6 +1,6 @@
-# NEAR NFT-Tutorial
+Near's license NFT registration module is to enable users to register their driving licenses as well as their vehicle registration details in a decentralized manner. An individual can be identified by his/her SSN and a vehicle by Vehicle Registry Number both of which for now are integers between 0 and 65535 (16 bit integers). Every SSN or individual is associated to an address of an individual Near account. We are developing our own NFT smart contract from the ground up following Near's NEP-171 standard and the key tutorial shared at the Near github website. We are also logging the identities of the driving license owners, their vehicle assets using exchange of unique identifiers powered by Near.
 
-Welcome to NEAR's NFT tutorial, where we will help you parse the details around NEAR's [NEP-171 standard](https://nomicon.io/Standards/NonFungibleToken/Core.html) (Non-Fungible Token Standard), and show you how to build your own NFT smart contract from the ground up, improving your understanding about the NFT standard along the way. 
+We are developing the Near's license NFT registration module using Near's NFT tutorial. The tutorial enabled us to develop our own vehicle NFT smart contract from the ground up.
 
 ## Prerequisites
 
