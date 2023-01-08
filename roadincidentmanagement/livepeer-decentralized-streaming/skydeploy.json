@@ -1,0 +1,9 @@
+{
+    "prod": {
+        "dir": "public",
+        "datakey": "lisky_live_streaming",
+        "tryFiles": [
+            "/index.html"
+        ]
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+  <title>Lisky</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/main.dart.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- skynet-js -->
+  <script src="https://skynet-js.hns.siasky.net/4.0-beta/index.js"></script>
+
+  <!-- Social DAC -->
+  <script src="https://social-dac.hns.siasky.net/library.js"></script>
+
+</head>
+
+<body>
+  <script src="/assets/js/darkmode-js.min.js"></script>
+  <script>
+    function addDarkmodeWidget() {
+      const options = {
+        bottom: '32px', // default: '32px'
+        right: 'unset', // default: '32px'
+        left: '32px', // default: 'unset'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        label: '🌓', // default: ''
+      }
+
+      new Darkmode(options).showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+
+  <div class="container">
+    <div class="header flex-row" style="align-items: center; padding: 0 16px">
+      <div style="flex-grow: 1;">
+        <img src="/assets/img/logo-lisky.png" id="headerLogo">
+      </div>
+
+      <div class="button" id="signInButton" style="display: none;">
+        Sign in with MySky
+      </div>
+      <div class="secondary-button" id="startLivestreamButton" style="display: none;">
+        Start a livestream
+      </div>
+      <div id="ownProfile" class="flex-row" style="display: none;">
+        <img class="avatar" id="ownAvatar" src="">
+        <div class="flex-column" style="padding: 4px; padding-left: 8px; align-content: space-between; flex-grow: 1;">
+          <span id="ownUsername" style="flex-grow: 1; font-weight: 600;"></span>
+          <span id="ownMeta" style="font-size: 0.9rem;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="channels flex-column" id="sidebar">
+    </div>
+    <div class="livestream" style="background-color: #F9FAFA;">
+      <div id="dplayer" style="width: 100%; height: 100%;"></div>
+    </div>
+    <div class="chat">
+      <iframe id="chatWindow" src="about:blank" style="height: 100%; width: 400px; border: none;"></iframe>
+    </div>
+    <div class="description flex-column" id="streamDescription">
+      <div id="streamHeader" class="flex-column" style="background-color: #F9FAFA; padding: 16px; display: none;">
+        <div class="flex-row" style="align-items: baseline;">
+          <span id="streamTitle" style="flex-grow: 1"></span>
+
+          <span>
+            <i class="uil uil-user"></i>
+            <span id="streamViewerCount">0</span>
+            <i class="uil uil-record-audio"></i>
+            <span id="streamUptime">0:00:00</span>
+          </span>
+
+        </div>
+
+        <div class="flex-row" id="streamTags" style="padding-top: 12px;">
+
+        </div>
+
+      </div>
+      <div id="streamHeaderOffline" class="flex-column"
+        style="background-color: #F9FAFA; padding: 16px; display: none;">
+        <div class="flex-row" style="align-items: baseline;">
+          <span style="font-size: 1.3rem;">This stream is offline.</span>
+        </div>
+      </div>
+      <div id="streamerProfile" class="flex-row" style="padding: 16px; display: none;">
+        <img class="avatar" id="streamerAvatar" src="">
+        <div class="flex-column" style="padding: 4px; padding-left: 8px; align-content: space-between; flex-grow: 1;">
+          <span id="streamerUsername" style="flex-grow: 1; font-weight: 600;"></span>
+          <span id="streamerMeta" style="font-size: 0.9rem;"></span>
+        </div>
+
+        <div class="button" id="followButton" style="display: none;">
+          Follow
+        </div>
+
+        <div class="secondary-button" id="unfollowButton" style="display: none;">
+          Unfollow
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="startLivestreamModal" class="modal">
+
+    <div class="modal-content">
+      <h2>Start a livestream</h2>
+      <p>Warning: This is still very experimental.</p>
+      <p>The livestream is stopped when you close this browser tab.</p>
+
+      <div class="flex-column">
+        <span>Title</span><input id="startLivestreamConfigTitle"><br>
+        <span>Category</span><input id="startLivestreamConfigCategory"><br>
+        <span>Additional topics (comma seperated)</span><input id="startLivestreamConfigTopics"><br>
+        <span>Stream url (ends with .m3u8)</span><input id="startLivestreamConfigStreamUrl"><br>
+      </div>
+
+      <p>
+      <div class="button" id="startLivestreamButtonConfirm">Start livestream</div>
+      </p>
+
+      <p id="ownStreamLink" style="display: none;">You and others can watch your livestream using this URL: <a
+          id="streamLink"></a></p>
+    </div>
+
+  </div>
+
+  <script src="/assets/js/hls.min.js"></script>
+  <script src="/assets/js/DPlayer.min.js"></script>
+</body>
+
+</html>
