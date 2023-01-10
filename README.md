@@ -95,9 +95,8 @@ We are developing a Transport DAO platform using Covalent that enables fleet pro
 
 Web3 Car Parts Dashboard powered by Covalent is a DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Car-Parts-Dashboard
 
-8. Evmos : Evmos and Covalent End Point APIs:
 
-a. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
+8. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
 
 ZK Transport wallet supports operations like the signing of the transaction and other cryptographic operations across multiple platforms and blockchains that improve the overall usability and interoperability. We used Zokrates for building the ZK Transport Wallet. 
 
