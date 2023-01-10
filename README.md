@@ -32,15 +32,24 @@ Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed 
 
 Learning and Contributing in the Blockchain Eco-systems:
 
-1. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
+1. a. NFTPort Dashboard: https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/NFT-Dashboard-NFTPort
+
+b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
 Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file)
 
+c. Livepeer: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer
 
-2. NFT.Storage for Filecoin:
-We are using NFT.Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file). We are storing Alarm metadata using NFT.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using NFT.Storage. We are also storing the hash returned from IPFS to Ethereum test network using  NFT.Storage.
- Further we are using NFT.Storage for: Video analytics configuration using NFT.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and NFT.Storage for snapshots.
- 
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-decentralized-streaming
+
+Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-video-nft
+
+
+2. a IPFS's web3ui storage: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
+We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
+ Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots.
+
+a NFT.Storage for Filecoin:
  Github link: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
  
  3. Tableland: We are using Tableland for implementing incident notes maintained by transport administrators. Please visit Incident Notes powered by Tableland at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
@@ -57,6 +66,10 @@ We are using NFT.Storage  for storing a variety of offchain data like incident s
 5. Fluence: We are using Fluence to develop a counter for road incidents reported by citizens and complains resolved by police authorities in a specific region which could be shared across citizens and government authorities. Our impact solution for citizens create a positive societal behavior and can be used for availing tax benefits, citizen rewards and ecommerce gift cards by Ministry of Road and Transportation.
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-fluence/fluence-incident-count
+
+6. a. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
+
+b. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
 
 6. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
