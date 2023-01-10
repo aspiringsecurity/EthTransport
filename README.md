@@ -1,13 +1,13 @@
 # EthTransport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of Ethereum blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics and automation. 
+Goal: Effective design, engineering and delivery of Ethereum blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools.. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
 Landing Website: https://sites.google.com/view/aspiring-road-safety/home
 
-Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, evmos and ZKP, Scrypt tools for a decentralized system. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
+Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, IPFS and Filecoin, Tron's BTTC blockchain. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
 
 How it works:
 
@@ -25,10 +25,9 @@ How it works:
 
 ----
 
+Moralis: Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed to moralis)
 
-Moralis: We are using the Medium Clone example to develop a dashboard and newsletter structure for recording the weekly minutes of the meeting. Please visit the module link: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports
-
-Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed to moralis)
+Tron's BTTC blockchain: We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms using Tron DAO. Please visit https://github.com/seetadev/EtherMonitor/tree/main/zoracommunitymarketplace/tron-contracts
 
 Learning and Contributing in the Blockchain Eco-systems:
 
