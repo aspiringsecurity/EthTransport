@@ -38,7 +38,9 @@ b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in o
 Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (screencapturewithoutsound.mov file under Mobile Screen capture directory)
 
 
-c. Livepeer: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer
+c. Livepeer: We are using Livepeer as the key infrastructure provider for online video streaming of critical road incidents. We are using Livepeer at: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer.
+
+Functions: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-decentralized-streaming
 
