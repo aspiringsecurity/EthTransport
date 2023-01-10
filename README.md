@@ -1,7 +1,7 @@
 # EthTransport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of Ethereum blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools.. 
+Goal: Effective design, engineering and delivery of IPFS storage and Ethereum, Tron blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools.. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
