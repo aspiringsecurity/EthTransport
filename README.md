@@ -103,8 +103,5 @@ ZK Transport wallet supports operations like the signing of the transaction and 
 
 Please visit the demo at https://drive.google.com/drive/u/3/folders/1M2x5Qoq2YkzCyFiu9QJEciuqfDTKMM7a
 
-b. Evmos Smart Contracts: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/evmos-smart-contract
-
-c. Governor Bravo Model Implementation and integration: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/governance 
 
 
