@@ -46,15 +46,6 @@ Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
 
-c. Livepeer: We are using Livepeer as the key infrastructure provider for online video streaming of critical road incidents. We are using Livepeer at: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer.
-
-Functions: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer
-
-Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-decentralized-streaming
-
-Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-video-nft
-
-
 2. a IPFS's web3ui storage: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
 We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/folders/1lxeHbPzLoF0DzDZkh9N7Z_5aTKjmdEza (screencapturewithoutsound.mov file). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
  Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots.
@@ -72,20 +63,31 @@ NFT.Storage for Filecoin: We are also learning to use NFT.Storage: Please visit 
  a. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
  
  b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
-
+ 
 
 5. Fluence: We are using Fluence to develop a counter for road incidents reported by citizens and complains resolved by police authorities in a specific region which could be shared across citizens and government authorities. Our impact solution for citizens create a positive societal behavior and can be used for availing tax benefits, citizen rewards and ecommerce gift cards by Ministry of Road and Transportation.
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-fluence/fluence-incident-count
 
 
-6. a. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
+6. a. Livepeer: We are using Livepeer as the key infrastructure provider for online video streaming of critical road incidents. We are using Livepeer at: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer.
+
+Functions: Live streaming with Object Detection Video Analytics using Livepeer for streaming; Camera Management: Add/edit/delete cameras with integration with Livepeer
+
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-decentralized-streaming
+
+Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-video-nft
+
+b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland
 
 
-7. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
+7. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
 
 
-8. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
+8. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
+
+
+9. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
 We are utilizing Chainlink VRF as follows:
 
@@ -94,7 +96,7 @@ E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to
 Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
 
-9. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
+10. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
 
 Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
 
@@ -110,7 +112,7 @@ We are developing a Transport DAO platform using Covalent that enables fleet pro
 Web3 Car Parts Dashboard powered by Covalent is a DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Car-Parts-Dashboard
 
 
-10. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
+11. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
 
 ZK Transport wallet supports operations like the signing of the transaction and other cryptographic operations across multiple platforms and blockchains that improve the overall usability and interoperability. We used Zokrates for building the ZK Transport Wallet. 
 
