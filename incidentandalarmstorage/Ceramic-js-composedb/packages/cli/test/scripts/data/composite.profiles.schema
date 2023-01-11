@@ -1,0 +1,42 @@
+type ImageMetadata {
+  src: String! @string(maxLength: 150)
+  mimeType: String! @string(maxLength: 50)
+  width: Int! @int(min: 1)
+  height: Int! @int(min: 1)
+  size: Int @int(min: 1)
+}
+
+type ImageSources {
+  original: ImageMetadata!
+  alternatives: [ImageMetadata] @list(maxLength: 10)
+}
+
+type GenericProfile @createModel(
+  accountRelation: SINGLE,
+  description: "A model to store common profile-related properties"
+) {
+  name: String @string(maxLength: 150)
+  image: ImageSources
+}
+ 
+type SocialProfile @createModel(
+  accountRelation: SINGLE,
+  description: "A model to store properties that accounts would like to share on social media"
+) {
+  description: String @string(maxLength: 420)
+  emoji: String @string(maxLength: 2)
+  background: ImageSources
+  url: String @string(maxLength: 240)
+}
+
+type PersonProfile @createModel(
+  accountRelation: SINGLE,
+  description: "A model to store accounts' personal data"
+) {
+  birthDate: String @string(maxLength: 10)
+  gender: String @string(maxLength: 42)
+  homeLocation: String @string(maxLength: 140)
+  residenceCountry: String @string(maxLength: 2)
+  nationalities: [String] @list(minLength:1, maxLength: 5) @string(maxLength: 2)
+  affiliations: [String] @list(maxLength: 10) @string(maxLength: 140)
+}
