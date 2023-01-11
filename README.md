@@ -78,14 +78,23 @@ Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadinc
 
 Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-video-nft
 
-b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland
+b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland  and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/social-sentiment-framework-apt-livepeer
 
 
-7. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
+7. a Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
+
+b. Graph Protocol (existing use of subgraph on graph explorer): https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/graph-subnode
+
+c. Push Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports/push-alerts-integration
+
+d. Arweave + bundlr + livepeer: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/arweave-bundlr-img-upload
 
 
-8. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
+8. a. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
 
+b. Ceramic + Lit integration and ceramic composedb: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
+
+c. ENS: We are using ethercalc.blockchain for ENS configuration and routing.
 
 9. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
