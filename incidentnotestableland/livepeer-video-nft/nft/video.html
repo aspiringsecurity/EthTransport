@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>NFT player</title>
+
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+</head>
+
+<video id="my_video_1" class="video-js vjs-default-skin vjs-fluid" controls preload="auto">
+</video>
+
+<script>
+
+  const checkSourceAvailability = async (source) => {
+    const response = await fetch(source);
+    console.log(response.status, response.ok);
+    return response.ok;
+  };
+
+  const player = videojs('my_video_1', {
+    errorDisplay: false,
+    autoplay: true,
+  });
+
+  checkSourceAvailability("https://livepeercdn.com/hls/213b4o2jt4y6f1me/index.m3u8").then((available) => {
+    if (available) {
+      player.src({
+        src: "https://livepeercdn.com/hls/213b4o2jt4y6f1me/index.m3u8",
+        type: "application/x-mpegURL",
+      });
+    } else {
+      console.log("Source not available");
+      // replace player with div
+      const playerDiv = document.getElementById("my_video_1");
+      const div = document.createElement("div");
+      div.innerHTML = "video offline"
+      playerDiv.parentNode.replaceChild(div, playerDiv);
+    }
+  });
+</script>
+
+</html>
