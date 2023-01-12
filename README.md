@@ -31,7 +31,7 @@ Tron's BTTC blockchain: We are using DAOtooling for coordination with a social f
 
 Learning and Contributing in the Blockchain Eco-systems:
 
-1. a. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
+1.a. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
 
 - View their NFTs in different network when they enter their address and select the network such as Ethereum, Polygon (Matic), Avalanche, and Binance Smart Chain
 
@@ -39,11 +39,25 @@ Learning and Contributing in the Blockchain Eco-systems:
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/NFT-Dashboard-NFTPort
 
+
 b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
-Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (screencapturewithoutsound.mov file under Mobile Screen capture directory)
+Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (screencapturewithoutsound.mov file under Mobile Screen capture directory).
 
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
+
+
+c. Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
+
+- Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
+
+Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Token-Gating-Access-Control
+
+- Lit Actions: We are using JS function bindings to do things like request a signature or a decryption. Please visit:
+
+i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_conditional_signing
+
+ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
 
 
 2. a IPFS's web3ui storage: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
@@ -81,24 +95,33 @@ Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/r
 b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland  and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/social-sentiment-framework-apt-livepeer
 
 
-7. a Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
-
-b. Graph Protocol (existing use of AdChain subgraph on graph explorer): We are using Adchain subgraph to build a datasource from the websites for sentiment analysis, which are kept in the Adchain registry. A python crawler mine these websites and feed relevant information to the analytics and visualization tool.
+7. a. Graph Protocol (existing use of AdChain subgraph on graph explorer): We are using Adchain subgraph to build a datasource from the websites for sentiment analysis, which are kept in the Adchain registry. A python crawler mine these websites and feed relevant information to the analytics and visualization tool.
 
 Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/using-adchain-subgraph
  and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/graph-subnode
  
+ 
+ b. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
+ 
 
 c. Push Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports/push-alerts-integration
+
 
 d. Arweave + bundlr + livepeer: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/arweave-bundlr-img-upload
 
 
 8. a. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
 
-b. Ceramic + Lit integration and ceramic composedb: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
 
-c. ENS: We are using ethercalc.blockchain for ENS configuration and routing.
+b. Ceramic + Lit integration and ceramic composedb: Please visit:
+
+i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-Lit-Integration
+
+ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-js-composedb
+
+
+c. ENS: We are using ethercalc.blockchain domain purchased at UD for ENS. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/ENS-roadicm
+
 
 9. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
