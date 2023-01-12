@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  background-color: #131316;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  margin: 1em;
+  margin-top: 3em;
+  padding: 10px;
+  font-size: 15px;
+  width: 10em;
+  margin-left: 6em;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
+textarea {
+  width:40em;
+  height: 4.5em;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #131316;
+  border: none;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  min-width: 20em;
+  height: 2em;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #131316;
+  border: none;
+  margin-bottom: 1em;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 4em;
+}
+
+.responseText__container {
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #131316;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.jsonResponse {
+  height: 10em;
+}
+
+.userInputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5em;
+  padding: 2em;
+  border: 3px solid #ffffff;
+  border-radius: 15px;
+}
+
+.info {
+  margin: 2em;
+  margin-bottom: 0;
+  color: #999999;
+}
