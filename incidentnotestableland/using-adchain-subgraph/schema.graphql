@@ -1,0 +1,46 @@
+type Application @entity {
+  id: ID!
+  whitelisted: Boolean
+  expirationDate: BigInt
+  endDate: BigInt
+  owner: Bytes
+  applicant: Bytes
+  deposit: BigInt
+  challenges: [Challenge!] @derivedFrom(field: "application")
+}
+
+type Challenge @entity {
+  id: ID!
+  application: Application
+  commitEndDate: BigInt!
+  revealEndDate: BigInt!
+  challenger: Bytes!
+  voter: Bytes!
+  outcome: String!
+  rewardPool: BigInt!
+  rewardClaimed: Boolean!
+  totalTokens: BigInt!
+}
+
+type Deposit @entity {
+  id: ID!
+  application: Application
+  commitEndDate: BigInt!
+  revealEndDate: BigInt!
+  challenger: Bytes!
+  outcome: String!
+  rewardPool: BigInt!
+  totalTokens: BigInt!
+}
+
+type Withdrawal @entity {
+  id: ID!
+  withdrew: BigInt!
+  newTotal: BigInt!
+  owner: Bytes!
+}
+
+type User @entity {
+  id: ID!
+  address: Bytes!
+}

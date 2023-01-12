@@ -1,0 +1,47 @@
+specVersion: 0.0.1
+description: adChain is an open protocol on the public Ethereum blockchain that allows for the building of decentralized applications for the $175 billion digital advertising ecosystem
+repository: https://github.com/graphprotocol/adchain-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: AdNetworks
+    network: mainnet
+    source:
+      address: '0x5E2Eb68A31229B469e34999C467b017222677183'
+      abi: Registry
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.1
+      language: wasm/assemblyscript
+      file: ./src/ad-networks.ts
+      entities:
+        - Application
+        - Challenge
+        - Deposit
+        - Withdrawal
+        - User
+      abis:
+        - name: Registry
+          file: ./abis/adNetworks.json
+      eventHandlers:
+        - event: _ApplicationWhitelisted(bytes32)
+          handler: applicationWhitelist
+        - event: _ApplicationRemoved(bytes32)
+          handler: applicationRemoved
+        - event: _Challenge(bytes32,uint256,string,uint256,uint256,address)
+          handler: challenge
+        - event: _ChallengeSucceeded(bytes32,uint256,uint256,uint256)
+          handler: challengeSucceeded
+        - event: _ChallengeFailed(bytes32,uint256,uint256,uint256)
+          handler: challengeFailed
+        - event: _Deposit(bytes32,uint256,uint256,address)
+          handler: deposit
+        - event: _Withdrawal(bytes32,uint256,uint256,address)
+          handler: withdrawal
+        - event: _ListingRemoved(bytes32)
+          handler: listingRemoved
+        - event: _ListingWithdrawn(bytes32)
+          handler: listingWithdrawn
+        - event: _RewardClaimed(uint256,uint256,address)
+          handler: rewardClaimed
