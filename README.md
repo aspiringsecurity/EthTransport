@@ -83,7 +83,11 @@ b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer
 
 7. a Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
 
-b. Graph Protocol (existing use of subgraph on graph explorer): https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/graph-subnode
+b. Graph Protocol (existing use of AdChain subgraph on graph explorer): We are using Adchain subgraph to build a datasource from the websites for sentiment analysis, which are kept in the Adchain registry. A python crawler mine these websites and feed relevant information to the analytics and visualization tool.
+
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/using-adchain-subgraph
+ and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/graph-subnode
+ 
 
 c. Push Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports/push-alerts-integration
 
