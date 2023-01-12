@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify functions:serve --port=7000"
+  },
+  "author": "0xcharchar",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@ensdomains/ens-contracts": "^0.0.7",
+    "ethers": "^5.4.7",
+    "node-fetch": "^3.0.0",
+    "web3.storage": "^3.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
