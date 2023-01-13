@@ -42,7 +42,7 @@ Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Billing
 
 b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
-Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (screencapturewithoutsound.mov file under Mobile Screen capture directory).
+Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (demo_screen capture.mov file under mobile screen capture and demos for NVP challenges directory ).
 
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
