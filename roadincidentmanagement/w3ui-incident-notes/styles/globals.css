@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-gradient {
+    @apply bg-gradient-to-br from-purple-600 to-blue-500;
+  }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient;
+  }
+
+  .text-gradient-with-hover {
+    @apply text-gradient hover:bg-gradient-to-tl;
+  }
+}
