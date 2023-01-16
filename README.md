@@ -60,9 +60,10 @@ i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmst
 ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
 
 
-2. a IPFS's web3ui storage: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
-We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos for NVP challenges directory). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
- Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots.
+2. a IPFS's web3ui storage: We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos for NVP challenges directory). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
+ Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
+
+We are also extending the w3notes example app to develop an incident notes tool for the road administrators. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-notes
 
 NFT.Storage for Filecoin: We are also learning to use NFT.Storage: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
  
