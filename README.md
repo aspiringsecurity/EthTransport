@@ -35,17 +35,29 @@ Tron's BTTC blockchain: We are using DAOtooling for coordination with a social f
 
 Learning and Contributing in the Blockchain Eco-systems:
 
-1.a. Filecoin and IPFS: Transport NFT for NFC tags of vehicles to improve road incident management (please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/transport-fvm-nft-nfc-tags ).
+1.a. Filecoin and IPFS: We are utilizing Filecoin with smart contracts compiled to FVM for:
 
-Decentralized NFT-based voting system for contract work for service & maintenance providers and companies and Ministry of Transportation. DAOs can issue NFTs to wallets based on what matters to their community and the holders of these NFTs can create proposals and vote on these proposals whilst they have the NFTs of that contract work.
+1. Creating a Transport NFT on the FVM for NFC tags of vehicle service and repair providers & vehicles to improve road incident management, decentralized NFT-based voting system for contract work by service providers, Votes are uploaded to IPFS with the most recent vote linking to one before. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/transport-fvm-nft-nfc-tags and https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao
+
+Demo Video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK
+
+Decentralized NFT-based voting system for contract work for service & maintenance providers and companies and Ministry of Transportation. DAOs can issue NFTs to wallets based on service and maintenance performance and work completed, and the holders of these NFTs can create proposals and vote on other proposals whilst they have the NFTs of that contract work. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/metis-nft-voting-contract-dao 
+
+2. To develop and use composable blocks and ensure effective design, engineering and delivery of a decentralized solution for road safety, monitoring and incident management using Ethereum & Filecoin eco-system tools. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao and https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/fevm-bootstrap
+
+
+Automated Workflow for decentralized voting for service providers and DAOs: 
+
+- Vehicle DAOs create a RFP for providing service or maintenance on the dapp. 
+- Vehicle drivers can join a RFP by minting an NFT of that RFP. This NFT is created on FVM. 
+- Vehicle drivers that have a certain RFP's NFT are eligible to create proposals and vote on them. 
+- Voting is gasless and the vote is stored on IPFS and Filecoin with the most recent vote linking to one before.
 
 Votes are uploaded to IPFS with the most recent vote linking to one before. This is done by storing the previous vote's CID in the file of the newest one. Therefore a chain of verifiable data is created. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/metiis-nft-voting-contract-dao
 
-FVM: DataDAO for incidents in Eth Transport: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao
 
-
-IPFS's web3ui storage: We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
- Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
+We are using IPFS and Filecoin for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos). We are storing Alarm metadata using IPFS. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS. We are also storing the hash returned from IPFS to Ethereum test network.
+ Further we are using IPFS for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
 
 We are also extending the w3notes example app to develop an incident notes tool for the road administrators. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-notes
 
