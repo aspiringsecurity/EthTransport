@@ -1,7 +1,7 @@
 # Eth Transport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of IPFS storage and Ethereum, Tron blockchain technology aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools.. 
+Goal: Effective design, engineering and delivery of IPFS and Filecoin storage and Ethereum, Tron blockchain aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
@@ -29,15 +29,24 @@ Moralis: Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be 
 
 Tron's BTTC blockchain: We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms using Tron DAO. Please visit https://github.com/seetadev/EtherMonitor/tree/main/zoracommunitymarketplace/tron-contracts
 
+
 Learning and Contributing in the Blockchain Eco-systems:
 
-1.a. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
+1.a. Filecoin and IPFS: Transport NFT for NFC tags of vehicles to improve road incident management (please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/transport-fvm-nft-nfc-tags ).
 
-- View their NFTs in different network when they enter their address and select the network such as Ethereum, Polygon (Matic), Avalanche, and Binance Smart Chain
+Decentralized NFT-based voting system for contract work for service & maintenance providers and companies and Ministry of Transportation. DAOs can issue NFTs to wallets based on what matters to their community and the holders of these NFTs can create proposals and vote on these proposals whilst they have the NFTs of that contract work.
 
-- View the contract of the NFT such as floor price, unique token ids sold today, gas quote rate day, and list of NFTs minted
+Votes are uploaded to IPFS with the most recent vote linking to one before. This is done by storing the previous vote's CID in the file of the newest one. Therefore a chain of verifiable data is created. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/metiis-nft-voting-contract-dao
 
-Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/NFT-Dashboard-NFTPort
+FVM: DataDAO for incidents in Eth Transport: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao
+
+
+IPFS's web3ui storage: We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
+ Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
+
+We are also extending the w3notes example app to develop an incident notes tool for the road administrators. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-notes
+
+NFT.Storage for Filecoin: We are also learning to use NFT.Storage: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
 
 
 b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
@@ -60,14 +69,13 @@ i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmst
 ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
 
 
-2. a IPFS's web3ui storage: We are using web3ui Storage  for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos for NVP challenges directory). We are storing Alarm metadata using web3ui.Storage. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS using web3ui.Storage. We are also storing the hash returned from IPFS to Ethereum test network using web3ui.Storage.
- Further we are using web3ui.Storage for: Video analytics configuration using web3ui.Storage; Camera Management: Add/edit/delete cameras with integration with Livepeer, NFT.Storage; Live streaming with Object Detection Video Analytics using Livepeer for streaming, and web3ui.Storage for snapshots. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-storage
+2. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
 
-We are also extending the w3notes example app to develop an incident notes tool for the road administrators. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/w3ui-incident-notes
+- View their NFTs in different network when they enter their address and select the network such as Ethereum, Polygon (Matic), Avalanche, and Binance Smart Chain
 
-NFT.Storage for Filecoin: We are also learning to use NFT.Storage: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
+- View the contract of the NFT such as floor price, unique token ids sold today, gas quote rate day, and list of NFTs minted
 
-DataDAO for incidents in Eth Transport: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/fvm-incident-data-dao
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/NFT-Dashboard-NFTPort
  
  
  3. Tableland: We are using Tableland for implementing incident notes maintained by transport administrators. Please visit Incident Notes powered by Tableland at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
