@@ -1,7 +1,7 @@
 # Transport Monitor
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of IPFS and Filecoin storage and Ethereum blockchain, Tron aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum, Filecoin, IPFS and Tron eco-system tools. 
+Goal: Effective design, engineering and delivery of IPFS and Filecoin storage and Ethereum blockchain, Tron aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Tron eco-system tools. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
@@ -9,7 +9,7 @@ Landing Website: https://sites.google.com/view/aspiring-road-safety/home
 
 Demo and Slides: https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK
 
-Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, IPFS and Filecoin, Tron's BTTC blockchain. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
+Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, IPFS and Filecoin, Chainlink, Tron's BTTC blockchain. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
 
 How it works:
 
@@ -70,8 +70,18 @@ Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd
 
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
+c. Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
-c. Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
+We are utilizing Chainlink VRF as follows:
+
+E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
+
+Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
+Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
+
+d. Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
 
 - Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
 
@@ -136,16 +146,7 @@ i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmst
 ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-js-composedb
 
 
-9. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
-
-We are utilizing Chainlink VRF as follows:
-
-E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
-
-Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
-
-
-10. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
+9. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
 
 Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
 
