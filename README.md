@@ -1,11 +1,13 @@
 # Eth Transport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of IPFS and Filecoin storage and Ethereum, Tron blockchain aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum and Tron eco-system tools. 
+Goal: Effective design, engineering and delivery of IPFS and Filecoin storage and Ethereum blockchain, Tron aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, automation, Ethereum, Filecoin, IPFS and Tron eco-system tools. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
 Landing Website: https://sites.google.com/view/aspiring-road-safety/home
+
+Demo and Slides: https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK
 
 Details: We have developed a road incident management system using Javascript, HTML5, SAP's UI5 on the front end using open source video streaming system, Covalent API end points, IPFS and Filecoin, Tron's BTTC blockchain. We are starting an express server and storing data on the Filecoin Network for enabling sharing of government assets like toll prepaid card, car details information for interstate travel, driving license management and quarterly pollution check and control. Our solution is powered by Ethercalc (SocialCalc), Zora, Polygon NFT.Storage, Tableland, XMTP, Chainlink, Fluence, Litprotocol for security and live peer for online video streaming at the road incident spot for better coordination and immediate action.
 
@@ -29,6 +31,7 @@ Moralis: Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be 
 
 Tron's BTTC blockchain: We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms using Tron DAO. Please visit https://github.com/seetadev/EtherMonitor/tree/main/zoracommunitymarketplace/tron-contracts
 
+----
 
 Learning and Contributing in the Blockchain Eco-systems:
 
@@ -105,20 +108,10 @@ Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/r
 
 b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland  and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/social-sentiment-framework-apt-livepeer
 
-
-7. a. Graph Protocol (existing use of AdChain subgraph on graph explorer): We are using Adchain subgraph to build a datasource from the websites for sentiment analysis, which are kept in the Adchain registry. A python crawler mine these websites and feed relevant information to the analytics and visualization tool.
-
-Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/using-adchain-subgraph
- and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/graph-subnode
  
- 
- b. Streamr Network: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/streamr-network
- 
+7. Push Protocol: Push alerts integration for investigative case management by administrators and dispatchers. We are developing a dashboard and newsletter structure for recording the weekly minutes of the meeting for ICM (investigative case management) and improving road safety. Please visit the module link: 
+https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports/push-alerts-integration
 
-c. Push Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Reports/push-alerts-integration
-
-
-d. Arweave + bundlr + livepeer: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/arweave-bundlr-img-upload
 
 
 8. a. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
@@ -129,9 +122,6 @@ b. Ceramic + Lit integration and ceramic composedb: Please visit:
 i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-Lit-Integration
 
 ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-js-composedb
-
-
-c. ENS: We are using ethercalc.blockchain domain purchased at UD for ENS. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer/ENS-roadicm
 
 
 9. Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
