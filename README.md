@@ -47,12 +47,6 @@ Decentralized NFT-based voting system for contract work for service & maintenanc
 
 2. To develop and use composable blocks and ensure effective design, engineering and delivery of a decentralized solution for road safety, monitoring and incident management using Ethereum & Filecoin eco-system tools. A FVM compatible DAO Quotation Portal for Maintenance and Transport Infrastructure Management: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/Maintenance-Contract-Quote-FVM-Transport-DAO
 
-Bootstrapping Data DAOs on FVM: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao and https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/fevm-bootstrap
-
-TRM token at FVM: please visit https://hyperspace.filfox.info/en/tx/0xd0a88d7d054e8babe6909523e0cc92147d35e0421b16af169eb78b1af6d6c25b and https://hyperspace.filfox.info/en/address/0x19df3bfd0f2020275436653931326ca417e02c73
-
-
-
 Automated Workflow for decentralized voting for service providers and DAOs: 
 
 - Vehicle DAOs create a RFP for providing service or maintenance on the dapp. 
@@ -61,6 +55,10 @@ Automated Workflow for decentralized voting for service providers and DAOs:
 - Voting is gasless and the vote is stored on IPFS and Filecoin with the most recent vote linking to one before.
 
 Votes are uploaded to IPFS with the most recent vote linking to one before. This is done by storing the previous vote's CID in the file of the newest one. Therefore a chain of verifiable data is created. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/metiis-nft-voting-contract-dao
+
+Bootstrapping Data DAOs on FVM: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao and https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/fevm-bootstrap
+
+TRM custom token at FVM and Early experiments on Hyperspace testnet: please visit https://hyperspace.filfox.info/en/tx/0xd0a88d7d054e8babe6909523e0cc92147d35e0421b16af169eb78b1af6d6c25b and https://hyperspace.filfox.info/en/address/0x19df3bfd0f2020275436653931326ca417e02c73
 
 
 We are using IPFS and Filecoin for storing a variety of offchain data like incident snapshots, alarm metadata and object types at the time of incident. Please find the video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK (demo_screen capture.mov file under mobile screen capture and demos). We are storing Alarm metadata using IPFS. Also, Saving/deleting alarm metadata and image to/from Filecoin, IPFS. We are also storing the hash returned from IPFS to Ethereum test network.
