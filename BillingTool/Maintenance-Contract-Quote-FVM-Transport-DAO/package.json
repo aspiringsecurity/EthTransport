@@ -1,0 +1,38 @@
+{
+    "name": "Data DAO",
+    "version": "0.0.0",
+    "description": "Data DAO Contract",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/legendarykamal/FVM-Contract"
+    },
+    "keywords": [
+        "FEVM",
+        "EVM",
+        "Solidity",
+        "Filecoin"
+    ],
+    "author": "Kamal Singh",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/legendarykamal/FVM-Contract#readme",
+    "files": [
+        "contracts"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "prettier-plugin-solidity": "^1.0.0"
+    },
+    "dependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+        "@openzeppelin/contracts": "^4.8.0",
+        "@zondax/solidity-bignumber": "^0.1.0",
+        "cids": "^0.7.5",
+        "hardhat-deploy": "^0.11.22",
+        "hardhat-deploy-ethers": "^0.3.0-beta.13",
+        "solidity-cborutils": "^2.0.0"
+    }
+}
