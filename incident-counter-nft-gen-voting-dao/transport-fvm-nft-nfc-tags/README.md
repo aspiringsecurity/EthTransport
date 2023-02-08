@@ -15,4 +15,4 @@ Quick Start
 - npm install
 - npm run dev
 
-& apologies for the spaghetti code - I was in a bit of a rush <3
+
