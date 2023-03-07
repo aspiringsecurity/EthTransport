@@ -45,7 +45,7 @@ Demo Video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJH
 
 Decentralized NFT-based voting system for contract work for service & maintenance providers and companies and Ministry of Transportation. DAOs can issue NFTs to wallets based on service and maintenance performance and work completed, and the holders of these NFTs can create proposals and vote on other proposals whilst they have the NFTs of that contract work. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/metis-nft-voting-contract-dao 
 
-2. To develop and use composable blocks and ensure effective design, engineering and delivery of a decentralized solution for road safety, monitoring and incident management using Ethereum & Filecoin eco-system tools. A FVM compatible DAO Quotation Portal for Maintenance and Transport Infrastructure Management: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/Maintenance-Contract-Quote-FVM-Transport-DAO
+2. To develop and use composable blocks and ensure effective design, engineering and delivery of a decentralized solution for road safety, monitoring and incident management using Ethereum & Filecoin eco-system tools. A FVM compatible DAO Quotation Portal for Maintenance and Transport Infrastructure Management: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/Maintenance-Contract-Quote-FVM-Transport-DAO
 
 Automated Workflow for decentralized voting for service providers and DAOs: 
 
@@ -105,7 +105,7 @@ ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarms
 
 - View the contract of the NFT such as floor price, unique token ids sold today, gas quote rate day, and list of NFTs minted
 
-Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/NFT-Dashboard-NFTPort
+Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/NFT-Dashboard-NFTPort
  
  
  3. Tableland: We are using Tableland for implementing incident notes maintained by transport administrators. Please visit Incident Notes powered by Tableland at https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/incidentnotes
@@ -167,7 +167,7 @@ We are developing a Transport DAO platform using Covalent that enables fleet pro
 Web3 Car Parts Dashboard powered by Covalent is a DAO platform that enables Transport Ministry and third party service and repair organizations to keep track of all the details of their transport assets, DeFi investments, transactions, and assets across all multiple chains and also displays DAO data using a data visualization chart. We are building our solution on top of an existing web3 dashboard system and are planning to integrate an analytics, tabulation and collaboration tool namely EtherCalc. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Car-Parts-Dashboard
 
 
-11. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/BillingTool/ZK-Transport-Wallet 
+11. ZK Transport Wallet at https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/ZK-Transport-Wallet
 
 ZK Transport wallet supports operations like the signing of the transaction and other cryptographic operations across multiple platforms and blockchains that improve the overall usability and interoperability. We used Zokrates for building the ZK Transport Wallet. 
 
