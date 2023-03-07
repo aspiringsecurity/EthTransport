@@ -77,6 +77,10 @@ We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marke
 
 c. Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
 
+Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
+
+Invoice to Cash Automation using inteloneapi sdk and OP community tooling: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/invoice-to-cash-automation
+
 d. Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
 We are utilizing Chainlink VRF as follows:
