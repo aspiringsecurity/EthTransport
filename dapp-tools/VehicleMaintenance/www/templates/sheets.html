@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <div class="buttons">
+          <button class="button button-clear button-positive" ng-click="closeList()">Close</button>
+    </div>
+    <h1 class="title">Select sheet to rename</h1>
+    <div class="buttons">
+      <button class="button button-clear button-positive" ng-click="doRename()">Rename</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+        
+        <ion-radio ng-repeat="sheet in sheets" ng-model="choice" ng-value="sheet.name" ng-change="selectedButton(sheet)">
+            {{ sheet.name }}
+        </ion-radio>
+        
+        
+    </div>
+  </ion-content>
+</ion-modal-view>

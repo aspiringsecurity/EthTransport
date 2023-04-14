@@ -1,0 +1,32 @@
+<ion-view view-title="More Apps">
+    
+<div class="bar bar-subheader">
+    <div class="button-bar" >
+        <a ng-class="{'button button-positive': bundles.show, 'button button-stable': !bundles.show}" ng-click="bundles.show = !bundles.show;">App Bundles</a>
+        <a ng-class="{'button button-positive': !bundles.show, 'button button-stable': bundles.show}" ng-click="bundles.show = !bundles.show;">Apps</a>
+    </div>
+</div>
+
+  <ion-content class="has-header has-subheader" padding="true">
+     <div class="list item-analytics" ng-if="bundles.show">
+          
+          <a class="item item-thumbnail-left" ng-repeat="bundle in appbundles" ng-click="openApp(bundle.link)">
+              <img ng-src="{{ bundle.src }}">
+              <h2>{{ bundle.name }}</h2>
+              <h4>{{ bundle.desc }}</h4>
+              <div class="button button-clear button-positive" ng-click="openApp(bundle.link)">Buy</div>
+          </a>
+          
+      </div>
+      <div class="list item-analytics" ng-if="!bundles.show">
+          
+          <a class="item item-thumbnail-left item-analytics" ng-repeat="app in apps" ng-click="openApp(app.link)">
+              <img ng-src="{{ app.src }}">
+              <h2>{{ app.name }}</h2>
+              <h4>{{ app.desc }}</h4>
+              <div class="button button-clear button-positive" ng-click="openApp(app.link)">Buy</div>
+            </a>
+          
+      </div>
+  </ion-content>
+</ion-view>
