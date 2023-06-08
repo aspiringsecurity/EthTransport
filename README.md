@@ -139,9 +139,7 @@ Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/roadinc
 
 Livepeer Video NFT: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/livepeer-video-nft
 
-b. Aptos: Please visit Livepeer integration with Aptos and also minting Livepeer Video NFT at Aptos as follows: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland  and https://github.com/aspiringsecurity/EthTransport/tree/main/incidentnotestableland/social-sentiment-framework-apt-livepeer
-
-c. Tron's BTTC blockchain: We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms using Tron DAO. Please visit https://github.com/seetadev/EtherMonitor/tree/main/zoracommunitymarketplace/tron-contracts
+b. Tron's BTTC blockchain: We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms using Tron DAO. Please visit https://github.com/seetadev/EtherMonitor/tree/main/zoracommunitymarketplace/tron-contracts
 
  
 7. Push Protocol: Push alerts integration for investigative case management by administrators and dispatchers. We are developing a dashboard and newsletter structure for recording the weekly minutes of the meeting for ICM (investigative case management) and improving road safety. Please visit the module link: 
