@@ -149,16 +149,6 @@ https://github.com/aspiringsecurity/EthTransport/tree/main/Medium-Meeting-Report
 
 
 
-8. a. Community DAO using Lens Protocol: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/lens-citizens-dao
-
-
-b. Ceramic + Lit integration and ceramic composedb: Please visit:
-
-i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-Lit-Integration
-
-ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Ceramic-js-composedb
-
-
 9. Covalent API end Points: We are using Covalent to see all NFTs for NFC tags of vehicles across different networks. Further, we have the following Covalent end-points APIs:
 
 Get Log Events by Contract Address: to get log events like sold/listed nft for NFC tags/NFC Tags of vehicles on marketplace. 
