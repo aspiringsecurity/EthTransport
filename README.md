@@ -90,6 +90,8 @@ Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Para
 
 NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
 
+Contract Allocation Reviews: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/contract-allocation-reviews
+
 Chainlink Automation: Batch NFT Reveal in NFT marketplace for NFC tags of Vehicles. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/automate-batch-nft-reveal
 
 
