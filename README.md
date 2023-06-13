@@ -75,13 +75,10 @@ Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd
 
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
-c. Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
 
-Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
+# Chainlink and Web3 eco-system
 
-Invoice to Cash Automation using inteloneapi sdk and OP community tooling: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/invoice-to-cash-automation
-
-d. Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
+Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
 We are utilizing Chainlink VRF as follows:
 
@@ -89,10 +86,21 @@ E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to
 
 Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
+- Space and Time: Dynamic NFT generator for NFC tags of vehicles using SxT and Chainlink at https://github.com/aspiringsecurity/EthTransport/tree/main/FVM-Upload-Incident-NFT-IPFS/Transport-SxT-dNFT
+
 Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
 
-e. Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
+
+Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
+
+Invoice to Cash Automation using inteloneapi sdk and OP community tooling: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/invoice-to-cash-automation
+
+
+Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
+
+
+Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
 
 - Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
 
