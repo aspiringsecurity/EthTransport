@@ -86,16 +86,22 @@ E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to
 
 Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
+Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Parametric Insurance dapp at https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout
+
+NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
+
 - Space and Time: Dynamic NFT generator for NFC tags of vehicles using SxT and Chainlink at https://github.com/aspiringsecurity/EthTransport/tree/main/FVM-Upload-Incident-NFT-IPFS/Transport-SxT-dNFT
 
+Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
+
 Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
-
-
 
 Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
 
 Invoice to Cash Automation using inteloneapi sdk and OP community tooling: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/invoice-to-cash-automation
 
+
+# Optimism and Lit
 
 Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
 
