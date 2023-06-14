@@ -100,6 +100,8 @@ Chainlink Automation: Batch NFT Reveal in NFT marketplace for NFC tags of Vehicl
 Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
 
 
+Verse DEX tokens: Creating custom TRM token at Verse. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout/Token-verse-dex
+
 Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
 Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
