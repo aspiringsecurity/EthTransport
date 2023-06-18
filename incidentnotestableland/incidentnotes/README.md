@@ -1,7 +1,7 @@
 # Incident Notes @ Tableland
 
 
-The initial goal of this project is to develop an incident notes platform for Radiologists using Tableland. Utilizing the tableland to do architecture for development.
+The initial goal of this project is to develop an incident notes platform for Government members using Tableland. Utilizing the tableland to do architecture for development.
 
 ![arch diagram](https://github.com/tablelandnetwork/example-apps/blob/main/tableland-todo/utils/todos-arch-diagram.png?raw=true)
 
