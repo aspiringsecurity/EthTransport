@@ -5,7 +5,9 @@ Goal: Effective design, engineering and delivery of Ethereum blockchain and IPFS
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
-Landing Website: https://sites.google.com/view/aspiring-road-safety/home
+Website: https://road-safety-deploy2.vercel.app/
+
+Information Website for Civic Bodies: https://sites.google.com/view/aspiring-road-safety/home
 
 Demo, Screencast, Slides: https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK
 
