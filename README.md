@@ -29,11 +29,6 @@ How it works:
 
 6. Alarm Viewer: Add alarms with a single touch. Open the Alarm Settings menu from the home page. Add an alarm, set the wallpaper or choose an alarm tone. You can also delete an existing alarm.
 
-----
-
-Moralis: Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed to moralis)
-
-----
 
 Learning and Contributing in the Blockchain Eco-systems:
 
@@ -193,5 +188,9 @@ ZK Transport wallet supports operations like the signing of the transaction and 
 
 Please visit the demo at https://drive.google.com/drive/u/3/folders/1M2x5Qoq2YkzCyFiu9QJEciuqfDTKMM7a
 
+----
 
+Moralis: Deployment URL: https://3gtivnurtulj.usemoralis.com:2053/server (to be deployed to moralis)
+
+----
 
