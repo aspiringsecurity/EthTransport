@@ -40,11 +40,11 @@ Alarm storage using Ethereum and Filecoin. Save/delete alarm metadata and image 
 
 Screencasts: Please visit the 3 videos at the link: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
 
-- Screen Capture with Alarm Storage using Infura RPC endpoint and Gateway: demo_screen capture.mov file
+a. Screen Capture with Alarm Storage using Infura RPC endpoint and Gateway: demo_screen capture.mov file
 
-- 2 minute demo of Road Incident and Investigative Case Management Solution: ICM Overview.mov file
+b. 2 minute demo of Road Incident and Investigative Case Management Solution: ICM Overview.mov file
 
-- Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
+c.  Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
 
   
 - XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
