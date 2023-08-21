@@ -5,7 +5,7 @@ Goal: Effective design, engineering and delivery of Ethereum blockchain and IPFS
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
-Website: https://road-safety-deploy2.vercel.app/
+Website: https://aspiring-road-safety-infura-deploy.vercel.app/
 
 Information Website for Civic Bodies: https://sites.google.com/view/aspiring-road-safety/home
 
@@ -31,6 +31,35 @@ How it works:
 
 
 Learning and Contributing in the Blockchain Eco-systems:
+
+# Tools and Technologies by Consensys, Partners
+
+- Infura: Video analytics configuration using Infura RPC end-points, IPFS.
+Live streaming with Object Detection, Video Analytics using Infura RPC end-points.
+Alarm storage using Ethereum and Filecoin. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS to the Ethereum test network. Provide links to alarms and blockchain transaction details.
+
+Screencasts: Please visit the 3 videos at the link: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
+
+- Screen Capture with Alarm Storage using Infura RPC endpoint and Gateway: demo_screen capture.mov file
+
+- 2 minute demo of Road Incident and Investigative Case Management Solution: ICM Overview.mov file
+
+- Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
+
+  
+- XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
+ 
+ Please also visit XMTP integrations with the platform:
+ 
+ a. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
+ 
+ b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
+
+ 
+- Metamask Unity SDK and Snaps: We have developed a vehicle spare parts NFT marketplace powered by Metamask Unity SDK and Snaps. 
+
+- Linea: We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis.
+
 
 # Filecoin and IPFS ecosystem and tools
 
@@ -88,8 +117,6 @@ Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Para
 NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
 
 Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
-
-Verse DEX tokens: Creating custom TRM token at Verse. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout/Token-verse-dex
 
 Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
