@@ -87,15 +87,7 @@ Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Para
 
 NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
 
-Contract Allocation Reviews: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/contract-allocation-reviews
-
-Chainlink Automation: Batch NFT Reveal in NFT marketplace for NFC tags of Vehicles. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/automate-batch-nft-reveal
-
-
-- Space and Time: Dynamic NFT generator for NFC tags of vehicles using SxT and Chainlink at https://github.com/aspiringsecurity/EthTransport/tree/main/FVM-Upload-Incident-NFT-IPFS/Transport-SxT-dNFT
-
 Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
-
 
 Verse DEX tokens: Creating custom TRM token at Verse. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout/Token-verse-dex
 
@@ -103,7 +95,6 @@ Chainlink Functions: We are learning to utilize Chainlink Functions in Transport
 
 Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
 
-Invoice to Cash Automation using inteloneapi sdk and OP community tooling: https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/invoice-to-cash-automation
 
 
 # Optimism and Lit
