@@ -1,6 +1,6 @@
-# MetaMask Snaps
+# MetaMask Snaps for Transport DAO
 
-Extend the functionality of MetaMask using
+Extend the functionality of MetaMask in Transport DAO using
 [MetaMask Snaps](https://metamask.io/snaps/).
 
 ## Getting started
