@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "ES2020"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "paths": {
+      "@metamask/*/test-utils": ["../*/src/test-utils"],
+      "@metamask/*": ["../*/src"]
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES2020",
+    "useUnknownInCatchVariables": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.38.0-flask.1",
+  "description": "MetaMask example snap demonstrating the use of `snap_dialog`.",
+  "proposedName": "Dialog Example Snap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MetaMask/snaps.git"
+  },
+  "source": {
+    "shasum": "LNZWM1v0Sw82vgEIaEm3eXsZZ2LBrHKy6BN0SBppDew=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "@metamask/dialog-example-snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:rpc": {
+      "dapps": true
+    },
+    "snap_dialog": {}
+  },
+  "manifestVersion": "0.1"
+}

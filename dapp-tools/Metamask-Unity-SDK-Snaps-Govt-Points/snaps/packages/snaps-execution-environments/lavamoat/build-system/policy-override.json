@@ -1,0 +1,9 @@
+{
+  "resources": {
+    "lavamoat-browserify": {
+      "builtin": {
+        "node:module": true
+      }
+    }
+  }
+}
