@@ -55,11 +55,10 @@ c.  Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
  
  b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
 
- 
-- Metamask Unity SDK and Snaps: We have developed a vehicle spare parts NFT marketplace powered by Metamask Unity SDK and Snaps. 
 
-- Linea: We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis.
+- Metamask Unity SDK and Snaps: We have developed a vehicle spare parts NFT marketplace powered by Metamask Unity SDK and Snaps. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/Metamask-Unity-SDK-Snaps-Govt-Points
 
+- Linea: We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/lineaster and https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/linea-token-list
 
 # Filecoin and IPFS ecosystem and tools
 
