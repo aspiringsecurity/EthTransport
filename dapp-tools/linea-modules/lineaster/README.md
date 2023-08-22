@@ -1,22 +1,7 @@
-<div align="center">
-    <img src="https://lineaster.goerli.linea.build/android-chrome-192x192-dark.png" alt="Lineaster Logo">
-    <h1>Lineaster</h1>
-    <strong>Decentralized, and permissionless social media app 🌿</strong>
-</div>
-<br>
-<div align="center">
-    <br>
-    <a href="https://lineaster.goerli.linea.build"><b>lineaster.goerli.linea.build</b></a>
-    <br><br>
-    <a href="https://discord.com/invite/9QwXqsyAps"><b>Discord</b></a>
-</div>
 
-## 🌿 About Lineaster
+##  Lineaster for Transport DAO
 
-Lineaster is a fork of the well-know Lenster social network, based on the [Lens Protocol](http://lens.xyz) 🌿 and
-deployed on the [Linea](https://linea.build/) testnet.
-
-Lenster's README is still available [here](./README-lenster.md).
+We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis. 
 
 ## 📦 Environments
 
@@ -25,9 +10,6 @@ Lenster's README is still available [here](./README-lenster.md).
 | Testnet     | https://lineaster.goerli.linea.build/ |
 | Development | https://lineaster.dev.linea.build/    |
 
-## ✅ Community
-
-Questions? Suggestions? Join us on [Discord](https://discord.com/invite/9QwXqsyAps)!
 
 ## ⚖️ License
 
