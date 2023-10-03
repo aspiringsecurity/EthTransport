@@ -93,6 +93,20 @@ We are also extending the w3notes example app to develop an incident notes tool 
 
 NFT.Storage for Filecoin: We are also learning to use NFT.Storage: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage
 
+Filecoin Data tools: We are developing FVM Calc, an open-source analytics tool and an OSS spreadsheet to enable data tabulation, visualization, organization, collaboration for incident image and video asset files on Filecoin network.
+
+Filecoin saturn dapp for discovery and retrieval of NFTs uploaded to IPFS via NFT.Storage: We are developing a socially scalable and open-source metadata retrieval, indexing, and management tooling for decentralized bulk query and retrieval of incident data and user training. Bandwidth is a major issue in South Asian road traffic and Filecoin Data tools fit right at the spot for quick data retrieval where learning via video streaming is not possible due to high latency or unavailability of a network for streaming.
+
+
+IPFS Helia implementation: We are developing a dapp using Helia (JS implementation of IPFS) along with NFT.storage that let us export the video & incident image file generated from Web3 video streaming tools as an NFT and upload it to IPFS using NFT.Storage. We are using the Electron example of Helia and are adding features like File (Edit/Delete), Save, save As, Email and print using ionic Capacitor framework plugins to our dapp.
+
+
+Lilypad: Creating an NFT for the cad file on the Filecoin Virtual Machine (FVM / FEVM) with Bacalhau Stable Diffusion. Creating a Transport NFT on the FVM for NFC tags of vehicle service and repair providers & vehicles to improve road incident management, decentralized NFT-based voting system for contract work by service providers, Votes are uploaded to IPFS with the most recent vote linking to one before. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/transport-fvm-nft-nfc-tags and https://github.com/aspiringsecurity/EthTransport/tree/main/incident-counter-nft-gen-voting-dao/nft-voting-dao/data-dao
+
+Demo Video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJHsj96Bb48AK
+
+Invoice Automation: We have developed an invoice dapp with integration with bacalhau for just in time invoicing for design contracts. 
+
 
 b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
