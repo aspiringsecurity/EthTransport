@@ -1,15 +1,15 @@
 # Transport Monitor
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of Infura & Metamask, Ethereum blockchain, IPFS and Filecoin storage aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Web3 eco-system tools. 
+Goal: Effective design, engineering and delivery of Optimism, Infura & Metamask, Ethereum blockchain, IPFS and Filecoin storage aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Web3 eco-system tools. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
-Website: https://aspiring-road-safety-infura-deploy.vercel.app/
-
-Information Website for Civic Bodies: https://sites.google.com/view/aspiring-road-safety/home
+Information Website for Civic Bodies: https://sites.google.com/view/aspiringroadsafety/home
 
 Demo, Screencast, Slides: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
+
+Vercel Website: https://aspiring-road-safety-infura-deploy.vercel.app/
 
 Filecoin Microgrant Recepient 2022-23 (Eth Transport) 
 
