@@ -32,6 +32,25 @@ How it works:
 
 Learning and Contributing in the Blockchain Eco-systems:
 
+# Optimism and Lit
+
+Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
+
+Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
+
+Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
+
+- Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
+
+Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Token-Gating-Access-Control
+
+- Lit Actions: We are using JS function bindings to do things like request a signature or a decryption. Please visit:
+
+i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_conditional_signing
+
+ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
+
+
 # Tools and Technologies by Consensys, Partners
 
 - Infura: Video analytics configuration using Infura RPC end-points, IPFS.
@@ -132,27 +151,6 @@ NFT and Certificate for Good Services in Repair and Vehicle services: https://gi
 Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
 
 Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
-
-Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
-
-
-
-# Optimism and Lit
-
-Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
-
-
-Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
-
-- Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
-
-Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Token-Gating-Access-Control
-
-- Lit Actions: We are using JS function bindings to do things like request a signature or a decryption. Please visit:
-
-i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_conditional_signing
-
-ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
 
 
 2. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
