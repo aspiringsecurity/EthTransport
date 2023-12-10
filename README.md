@@ -1,4 +1,4 @@
-# Transport Monitor
+# Eth Transport
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
 Goal: Effective design, engineering and delivery of Optimism, Infura & Metamask, Ethereum blockchain, IPFS and Filecoin storage aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Web3 eco-system tools. 
@@ -32,23 +32,24 @@ How it works:
 
 Learning and Contributing in the Blockchain Eco-systems:
 
-# Optimism and Lit
+# Chainlink and Web3 eco-system
 
-Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
+Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
 
-Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
+We are utilizing Chainlink VRF as follows:
 
-Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
+E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
 
-- Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
+Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
 
-Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Token-Gating-Access-Control
+Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Parametric Insurance dapp at https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout
 
-- Lit Actions: We are using JS function bindings to do things like request a signature or a decryption. Please visit:
+NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
 
-i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_conditional_signing
+Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
 
-ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
+Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
 
 
 # Tools and Technologies by Consensys, Partners
@@ -133,24 +134,23 @@ Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd
 
 We are using the zora starter kit to access ZORA API, Creator Toolkit, and Marketplace Hyperstructure. Zora's Auction House template is being utilized for NFT marketplace of alarm clock wallpapers and background ringtones purchase and auction. We are also extending and adapting Turtle Music using NFT Experiments for music curators for alarm clock. We are using DAOtooling for coordination with a social focus around community collaboration for road incidents and alarms.
 
+# Optimism and Lit
 
-# Chainlink and Web3 eco-system
+Optimism NFT marketplace for spare parts of vehicles: Optimism NFT marketplace for NFC tags of spare parts of vehicles, enabling sharing of government assets and service/repair of vital assets, reduction in counterfeiting of vital spare parts of vehicles and transport infrastructure: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/optimism-parts-nft-marketplace
 
-Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
+Work Order Manager and Billing Tool suite within OP Spare Parts NFT marketplace: please visit https://github.com/aspiringsecurity/EthTransport/tree/main/Asset-Management-Spare-Parts/OP-Work-Order-Suite
 
-We are utilizing Chainlink VRF as follows:
+Lit : We are using Lit protocol to automate signing, reading, and writing road incident metadata (snapshots) and alarm viewer data to web3 decentralized networks (Ethereum and IPFS).
 
-E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
+- Lit Access Control: Lit Protocol Oauth to Enable faster login for 5 different personas. The 5 different personas: Citizen, Police officer, dispatcher, admin, government roles can easily be authenticated and logged in so that they can use their Ethereum address. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Access-Control-Google-OAuth
 
-Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol: Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/Lit-Token-Gating-Access-Control
 
-Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Parametric Insurance dapp at https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout
+- Lit Actions: We are using JS function bindings to do things like request a signature or a decryption. Please visit:
 
-NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
+i) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_conditional_signing
 
-Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
-
-Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+ii) https://github.com/aspiringsecurity/EthTransport/tree/main/incidentandalarmstorage/lit-actions_sign_api_response
 
 
 2. NFTPort Dashboard: We are using NFTPort to see all NFTs from different networks. This enables drivers, citizens, police officers and administrators to:
