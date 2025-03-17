@@ -7,7 +7,7 @@ Solution: Technical solution for citizens, police officers and drivers to report
 
 Information Website for Civic Bodies: https://sites.google.com/view/aspiringroadsafety/home
 
-Demo, Screencast, Slides: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
+Demo, Screencast & Slides: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
 
 Vercel Website: https://aspiring-road-safety-infura-deploy.vercel.app/
 
