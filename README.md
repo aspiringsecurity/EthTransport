@@ -1,7 +1,7 @@
 # Transport DAO
 Monitoring tools for road incident management and reducing traffic congestion. Crowdsourcing information sharing for better and safer roads.
 
-Goal: Effective design, engineering and delivery of Chainlink, Infura & Metamask, Ethereum blockchain, IPFS, Near and Filecoin storage aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Web3 eco-system tools. 
+Goal: Effective design, engineering and delivery of Web3 and Filecoin and IPFS storage aided solution for vehicles and citizens to make roads safer and better for everyone using predictive analytics, Chainlink automation, Ethereum, Filecoin, IPFS and Web3 eco-system tools. 
 
 Solution: Technical solution for citizens, police officers and drivers to report and manage incidents, detect and prevent accidents on web and mobile.
 
@@ -31,54 +31,6 @@ How it works:
 
 
 Learning and Contributing in the Blockchain Eco-systems:
-
-# Chainlink and Web3 eco-system
-
-Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
-
-We are utilizing Chainlink VRF as follows:
-
-E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
-
-Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
-
-Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Parametric Insurance dapp at https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout
-
-NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
-
-Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
-
-Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
-
-
-
-# Tools and Technologies by Consensys, Partners
-
-- Infura: Video analytics configuration using Infura RPC end-points, IPFS.
-Live streaming with Object Detection, Video Analytics using Infura RPC end-points.
-Alarm storage using Ethereum and Filecoin. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS to the Ethereum test network. Provide links to alarms and blockchain transaction details.
-
-Screencasts: Please visit the 3 videos at the link: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
-
-a. Screen Capture with Alarm Storage using Infura RPC endpoint and Gateway: demo_screen capture.mov file
-
-b. 2 minute demo of Road Incident and Investigative Case Management Solution: ICM Overview.mov file
-
-c.  Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
-
-  
-- XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
- 
- Please also visit XMTP integrations with the platform:
- 
- a. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
- 
- b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
-
-
-- Metamask Unity SDK and Snaps: We have developed a vehicle spare parts NFT marketplace powered by Metamask Unity SDK and Snaps. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/Metamask-Unity-SDK-Snaps-Govt-Points
-
-- Linea: We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/lineaster and https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/linea-token-list
 
 # Filecoin and IPFS ecosystem and tools
 
@@ -128,7 +80,56 @@ Demo Video at https://drive.google.com/drive/u/0/folders/1-A3OA0GT21SBx8ipKeQkJH
 Invoice Automation: We have developed an invoice dapp with integration with bacalhau for just in time invoicing for design contracts. 
 
 
-b. Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
+
+# Chainlink and Web3 eco-system
+
+Chainlink: Chainlink: We are extending and adapting the Chainlink project "Link My Ride" to develop a decentralized first aid and ambulance platform by using Chainlink External Adapter to connect a Tesla Vehicle API to a Chainlink oracle for a peer-to-peer vehicle rental app. We wish to use it for Maruti Vehicle API and Hyundai Vehicle API too. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/decentralized-ambulance
+
+We are utilizing Chainlink VRF as follows:
+
+E-Challan (Transport Receipt) Bill Generation: We are utilizing Chainlink Mix to work with Chainlink smart contracts. The bill script will deploy a smart contract to goerli and get a Random number via Chainlink VRF, which can used to identify a unique transaction/order number for the receipt or bill. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement/IPFS-Chainlink-Monitor-main
+
+Parametric Insurance Solution in public transportation especially for project finance. We are utilizing an existing example at chainlink github repo to develop an insurance solution for public transportation. Link: https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
+Fleet and Cab Drivers and Vehicle Service Organizations Payouts:  Chainlink Parametric Insurance dapp at https://github.com/aspiringsecurity/EthTransport/tree/main/Fleet-cab-drivers-service-payout
+
+NFT and Certificate for Good Services in Repair and Vehicle services: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating 
+
+Dynamic NFT for for Good Services in Repair and Vehicle servicing: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/NFT-giveaway-certificate-service-rating/Transport-SxT-dNFT 
+
+Chainlink Functions: We are learning to utilize Chainlink Functions in Transport Monitor at https://github.com/aspiringsecurity/EthTransport/tree/main/roadincidentmanagement
+
+
+
+# Tools and Technologies by Consensys, Partners
+
+- Infura: Video analytics configuration using Infura RPC end-points, IPFS.
+Live streaming with Object Detection, Video Analytics using Infura RPC end-points.
+Alarm storage using Ethereum and Filecoin. Save/delete alarm metadata and image to/from IPFS. Store the hash returned from IPFS to the Ethereum test network. Provide links to alarms and blockchain transaction details.
+
+Screencasts: Please visit the 3 videos at the link: https://drive.google.com/drive/u/4/folders/1zpA8nhLPPaFk3CMUqGdHENzTFpAkLTPf
+
+a. Screen Capture with Alarm Storage using Infura RPC endpoint and Gateway: demo_screen capture.mov file
+
+b. 2 minute demo of Road Incident and Investigative Case Management Solution: ICM Overview.mov file
+
+c.  Detailed and complete solution with Infura implementation: ICM_demo.mp4 file
+
+  
+- XMTP: We are implementing XMTP Chat for Transport administrators in a particular region with CyberConnect functions. Please visit the implementation link: https://github.com/aspiringsecurity/EthTransport/tree/main/XMTPChat-with-cyberconnect
+ 
+ Please also visit XMTP integrations with the platform:
+ 
+ a. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-loc-chat
+ 
+ b. https://github.com/aspiringsecurity/EthTransport/tree/main/xmtp-messaging
+
+
+- Metamask Unity SDK and Snaps: We have developed a vehicle spare parts NFT marketplace powered by Metamask Unity SDK and Snaps. Please visit https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/Metamask-Unity-SDK-Snaps-Govt-Points
+
+- Linea: We have extended and adapted a decentralized social media dapp on Linea mainnet to enable better insights into the types and severity of incidents, analytics using social media sentiment analysis. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/lineaster and https://github.com/aspiringsecurity/EthTransport/tree/main/dapp-tools/linea-modules/linea-token-list
+
+Polygon: We are utilizing ZoraModuleManager, and ZoraProtocolFeeSettings in our our dapp and deploying it on Polygon after registering the Zora market module. Please visit: https://github.com/aspiringsecurity/EthTransport/tree/main/alarmviewer
 
 Please find the video at https://drive.google.com/drive/u/3/folders/1vo_ZnHzqYwd7lDaZKGSXev3Vvya7DjJT (demo_screen capture.mov file under mobile screen capture and demos for NVP challenges directory ).
 
