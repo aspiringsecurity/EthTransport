@@ -4,3 +4,6 @@
 [submodule "saferoads-dao-filecoin"]
 	path = saferoads-dao-filecoin
 	url = https://github.com/virtualvasu/saferoads-filecoin
+[submodule "saferoads-dao-hedera"]
+	path = saferoads-dao-hedera
+	url = https://github.com/virtualvasu/road-incident-dapp-hedera
