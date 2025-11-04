@@ -1,0 +1,6 @@
+[submodule "saferoads-dao-celo"]
+	path = saferoads-dao-celo
+	url = https://github.com/virtualvasu/self-road-report-celo
+[submodule "saferoads-dao-filecoin"]
+	path = saferoads-dao-filecoin
+	url = https://github.com/virtualvasu/saferoads-filecoin
