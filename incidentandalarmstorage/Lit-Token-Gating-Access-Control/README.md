@@ -1,4 +1,4 @@
-# Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol
+# Token-gate the Incident Dashboard Page with 5 different personas using Lit Protocol and WorldID
 
 
 We are extending the example of how to token-gate a Next.js page using [Lit Protocol](https://developer.litprotocol.com/) using `getServerSideProps`.
