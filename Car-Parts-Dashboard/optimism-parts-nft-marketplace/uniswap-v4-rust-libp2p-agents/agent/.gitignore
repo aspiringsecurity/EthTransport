@@ -1,0 +1,16 @@
+# Rust build artifacts
+/target/
+debug/
+*.pdb
+
+# Cargo lock for libraries (keep for binaries)
+# Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env

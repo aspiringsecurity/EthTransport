@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: /agent
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "deps(rust):"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "deps(ci):"

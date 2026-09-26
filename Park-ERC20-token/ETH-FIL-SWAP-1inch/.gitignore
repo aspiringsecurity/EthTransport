@@ -1,0 +1,7 @@
+./node_modules
+./artifacts
+./cache
+./secrets.json
+./.env
+
+node_modules
