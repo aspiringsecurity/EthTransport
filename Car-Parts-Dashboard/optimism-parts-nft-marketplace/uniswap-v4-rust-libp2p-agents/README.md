@@ -2,6 +2,9 @@
 
 Rust libp2p agents coordinating Uniswap V4 swaps on Sepolia testnet with trust-aware networking primitives.
 
+We have also launched PPT token on Arbitrum at Uniswap: please visit https://app.uniswap.org/positions/v3/arbitrum/5712703 and https://arbiscan.io/address/0x6f0f27926136e23c5e964c60fa79222b8c858d0e#code
+
+
 ## Overview
 
 This project demonstrates how decentralized P2P agents can coordinate on-chain DeFi operations using:
