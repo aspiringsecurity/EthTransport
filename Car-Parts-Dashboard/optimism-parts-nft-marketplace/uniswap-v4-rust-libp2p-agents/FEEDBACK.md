@@ -2,7 +2,7 @@
 
 ## ETHGlobal Hackathon — Uniswap Integration
 
-This document provides the verification and developer feedback requested for our ETHGlobal hackathon submission and demonstrates our concrete use of Uniswap infrastructure across both **live Uniswap liquidity on Arbitrum mainnet** and **Uniswap V4 experimentation on Sepolia**.
+This document provides the verification and developer feedback requested for our ETHGlobal hackathon submission and demonstrates our concrete use of Uniswap infrastructure across both **live Uniswap liquidity on Arbitrum mainnet** and **Uniswap V4 experimentation on Sepolia**. We have also launched PPT token on Arbitrum at Uniswap: please visit https://app.uniswap.org/positions/v3/arbitrum/5712703 and https://arbiscan.io/address/0x6f0f27926136e23c5e964c60fa79222b8c858d0e#code
 
 Our implementation combines:
 
@@ -14,6 +14,7 @@ Our implementation combines:
 * ENS-based agent identity
 * World ID human verification
 * Agent-aware transaction and reputation infrastructure
+
 
 The core architecture is:
 
